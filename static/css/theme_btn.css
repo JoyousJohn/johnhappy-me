@@ -1,17 +1,11 @@
-#theme-btn-wrap {
-    height: 100vh;
-    display: flex;
-    align-items: flex-end;
-}
-
 #theme-btn {
-    background-color: transparent;
     border: none;
     color: var(--primary-col);
     font-size: 2.5rem;
-    position: absolute;
+    position: fixed;
     bottom: 10px;
     left: 10px;
+    background-color: transparent;
 }
 
 #theme-btn:hover {

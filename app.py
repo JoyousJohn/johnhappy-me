@@ -17,7 +17,12 @@ def transcript():
 def portfolio():
     heads = ['<link rel="stylesheet" href="css/portfolio.css">',
     '<link href="https://fonts.cdnfonts.com/css/senbatsu" rel="stylesheet">',
-    '<link href="https://fonts.cdnfonts.com/css/indian-steeds" rel="stylesheet">']
+    '<link href="https://fonts.cdnfonts.com/css/indian-steeds" rel="stylesheet">',
+    '<link href="https://fonts.cdnfonts.com/css/omnes-2" rel="stylesheet">',
+    '<link href="https://fonts.cdnfonts.com/css/sweet-bread?styles=149710" rel="stylesheet">',
+    '<link href="https://fonts.cdnfonts.com/css/hubballi" rel="stylesheet">', 
+    '<link href="https://fonts.cdnfonts.com/css/freitag-trial" rel="stylesheet">',
+    '<link href="https://fonts.cdnfonts.com/css/division-one" rel="stylesheet">']
     return template('templates/portfolio.html', heads=heads)
 
 @route('/css/<file>')

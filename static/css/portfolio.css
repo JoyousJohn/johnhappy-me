@@ -1,11 +1,7 @@
-html {
-    overflow-y: hidden;
-}
-
 #portfolio-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 10vh auto;
+    margin: 15vh auto;
 }
 
 #ruwho-title {
@@ -13,6 +9,7 @@ html {
     justify-content: center;
     align-items: flex-end;
     user-select: none;
+    height: 7rem;
 }
 
 #ruwho-ru {
@@ -24,6 +21,17 @@ html {
 #ruwho-who {
     font: 5.2rem senbatsu; 
     color: var(--primary-col);
+}
+
+#stockscope-title {
+    font: 5.2rem Division One;
+    font-style: normal;
+    color: var(--primary-col);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    height: 7rem;
 }
 
 a {
