@@ -1,0 +1,32 @@
+from bottle import route, run, template, static_file, SimpleTemplate
+import os
+
+@route('/')
+def index():
+    return template('templates/index.html')
+
+@route('/transcript')
+def transcript():
+    return template('templates/transcript.html')
+
+@route('/contact')
+def transcript():
+    return template('templates/contact.html')
+
+@route('/portfolio')
+def portfolio():
+    heads = ['<link rel="stylesheet" href="css/portfolio.css">',
+    '<link href="https://fonts.cdnfonts.com/css/senbatsu" rel="stylesheet">',
+    '<link href="https://fonts.cdnfonts.com/css/indian-steeds" rel="stylesheet">']
+    return template('templates/portfolio.html', heads=heads)
+
+@route('/css/<file>')
+def send_css(file):
+    return static_file(file, root='static/css/')
+
+@route('/js/<file>')
+def send_js(file):
+    return static_file(file, root='static/js/')
+
+if __name__ == '__main__':
+    run(host='0.0.0.0', port=int(os.getenv('PORT', default=8080)), reloader=True)

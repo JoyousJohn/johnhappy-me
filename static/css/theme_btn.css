@@ -1,0 +1,23 @@
+#theme-btn-wrap {
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+#theme-btn {
+    background-color: transparent;
+    border: none;
+    color: var(--primary-col);
+    font-size: 2.5rem;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+#theme-btn:hover {
+    cursor: pointer;
+}
+
+#theme-btn:focus {
+    outline: 0;
+}

@@ -1,0 +1,58 @@
+:root { /* DARK THEME */
+    --background-col: rgb(39, 38, 53);
+    --primary-col: rgb(220, 220, 220);
+    --secondary-col: rgb(205, 205, 205);
+    --a-color: #38b4ff;
+}
+
+[theme="light"] {
+    --background-col: rgb(214, 214, 214);
+    --primary-col: rgb(39, 38, 53);
+    --secondary-col: rgb(57, 56, 71);
+    --a-color: #007ac4;
+}
+
+body  {
+    background-color: var(--background-col);
+}
+
+#nav-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+}
+
+.nav-btn {
+    margin: 0 15px;
+    padding: 0;
+    font: 2rem Chivo Mono;
+    border: none;
+    transition: 0.15s;
+}
+
+#nav-btn:hover {
+    cursor: pointer;
+}
+
+#nav-btn:focus {
+    outline: 0;
+}
+
+#nav-btn-innactive {
+    background-color: transparent;
+    color: var(--primary-col);
+    border: transparent;
+    cursor: pointer;
+}
+
+#nav-btn-innactive:hover {
+    background-color: var(--primary-col);
+    /*border-bottom: 3px solid var(--primary-col);*/
+    color: var(--background-col);
+}
+
+#nav-btn-active {
+    background-color: var(--secondary-col);
+    color: var(--background-col);
+    cursor: default;
+}

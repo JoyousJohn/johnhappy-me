@@ -1,0 +1,38 @@
+html {
+    overflow-y: hidden;
+}
+
+#portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10vh auto;
+}
+
+#ruwho-title {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    user-select: none;
+}
+
+#ruwho-ru {
+    font: 7rem Indian Steeds;
+    font-weight: bold;
+    color: rgb(233, 35, 35);
+}
+
+#ruwho-who {
+    font: 5.2rem senbatsu; 
+    color: var(--primary-col);
+}
+
+a {
+    color: var(--a-color);
+    font: 1.8rem Montserrat;
+}
+
+p {
+    color: var(--secondary-col);
+    font: 1.2rem Montserrat;
+    margin: 1.3em;
+}

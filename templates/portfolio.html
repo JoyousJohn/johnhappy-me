@@ -1,0 +1,29 @@
+%rebase templates/base.html
+
+<div id="portfolio-grid">
+
+    <div id="ruwho-wrapper" style="border-right: 1px solid var(--secondary-col);">
+
+        <a href="https://www.ruwho.icu" target="_blank" style="text-decoration: none;">
+            <div id="ruwho-title">
+                <span id="ruwho-ru">RU</span> <span id="ruwho-who">who</span>     
+            </div>
+        </a>
+        <div id=ruwho-link style="text-align: center;"><a href="https://www.ruwho.icu" target="_blank">RUwho.icu</a></div>
+        
+        <p>RUwho is a service that allows for easier searching of the public Rutgers University people database. <u>RUwho is unaffiliated with Rutgers</u>.</p>
+        <p>
+            Designed to expand upon the official search platform; it's advantageous by returning results in real-time as a query is being entered alongside returning
+            contact info of each match without the need to make multiple requests for every individual.
+        </p>
+        <p>
+            The backend uses Flask and integrates with a FastAPI wrapper to fetch from the Rutgers DB. This project furthered my experience with
+            Flask, HTML, JS, and CSS, including media quieries. This was my first time using FastAPI, Waitress, Intersection Observers, Datadog, and XHTTP (over Requests) and my first time using AJAX, localStorage, and rate limiting in production.
+        </p>
+        <!--<p>A public API wrapper will be available at a later date.</p>-->
+
+    </div>
+
+</div>
+
+<script>$('.nav-btn-portfolio').attr('id', 'nav-btn-active').attr('onclick', null);</script>
