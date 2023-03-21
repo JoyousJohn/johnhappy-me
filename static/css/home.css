@@ -14,12 +14,17 @@
 
 body  {
     background-color: var(--background-col);
+    margin: 0;
 }
 
 #nav-wrapper {
-    display: grid;
     position: fixed;
-    inset: 8px 8px auto 8px;
+    inset: 8px 0 auto 0;
+    background-color: var(--background-col);
+}
+
+#nav-grid {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
 }
