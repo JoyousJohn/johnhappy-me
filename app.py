@@ -1,5 +1,5 @@
 from bottle import route, run, template, static_file, SimpleTemplate
-import os
+import os, time
 
 @route('/')
 def index():
@@ -23,7 +23,7 @@ def portfolio():
     '<link href="https://fonts.cdnfonts.com/css/hubballi" rel="stylesheet">', 
     '<link href="https://fonts.cdnfonts.com/css/freitag-trial" rel="stylesheet">',
     '<link href="https://fonts.cdnfonts.com/css/division-one" rel="stylesheet">']
-    return template('templates/portfolio.html', heads=heads)
+    return template('templates/portfolio.html', heads=heads, t=time.time())
 
 @route('/css/<file>')
 def send_css(file):
@@ -34,4 +34,4 @@ def send_js(file):
     return static_file(file, root='static/js/')
 
 if __name__ == '__main__':
-    run(host='0.0.0.0', port=int(os.getenv('PORT', default=8080)), reloader=True)
+    run(host='0.0.0.0', port=int(os.getenv('PORT', default=5000)), debug=True, reloader=True)
