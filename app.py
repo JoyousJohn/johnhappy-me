@@ -3,15 +3,15 @@ import os, time
 
 @route('/')
 def index():
-    return template('templates/index.html')
+    return template('templates/index.html', t=time.time())
 
 @route('/transcript')
 def transcript():
-    return template('templates/transcript.html')
+    return template('templates/transcript.html', t=time.time())
 
 @route('/contact')
 def transcript():
-    return template('templates/contact.html')
+    return template('templates/contact.html', t=time.time())
 
 @route('/portfolio')
 def portfolio():
