@@ -34,6 +34,8 @@ def send_js(file):
     return static_file(file, root='static/js/')
 
 if __name__ == '__main__':
+    from dotenv import load_dotenv
+    load_dotenv()
     if os.getenv('DEBUG') == 'True':
         run(host='0.0.0.0', port=int(os.getenv('PORT', default=5000)), debug=True, reloader=True)
     else:
