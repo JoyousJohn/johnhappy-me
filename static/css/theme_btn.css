@@ -1,11 +1,14 @@
 #theme-btn {
     border: none;
-    color: var(--primary-col);
-    font-size: 2.5rem;
+    color: var(--background-col);
+    background-color: var(--primary-col);
+    font-size: 1.8rem;
     position: fixed;
     bottom: 10px;
     left: 10px;
-    background-color: transparent;
+    width: 3.5rem;
+    aspect-ratio: 1;
+    border-radius: 1rem;
 }
 
 #theme-btn:hover {
