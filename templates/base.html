@@ -10,9 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&family=Montserrat:wght@500&family=Poppins:wght@200&display=swap" rel="stylesheet">    
     <link href="https://fonts.cdnfonts.com/css/mangoli" rel="stylesheet">
     <script src="js/theme.js"></script>
+    <link rel="stylesheet" href="css/style.css?{{t}}">
     <link rel="stylesheet" href="css/home.css?{{t}}">
     <link rel="stylesheet" href="css/transcript.css?{{t}}">
     <link rel="stylesheet" href="css/theme_btn.css?{{t}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <%if defined("heads"):%>
         <%for h in heads:%>
             {{!h}}
@@ -29,8 +31,7 @@
             <div class="nav-btn nav-btn-portfolio" id="nav-btn-innactive" onclick="window.location.href='/portfolio'">portfolio</div>
             <div class="nav-btn nav-btn-contact " id="nav-btn-innactive" onclick="window.location.href='/contact'">contact</div>
             <div class="nav-btn nav-btn-home" id="nav-btn-innactive" onclick="window.location.href='/'">home</div>
-            <div class="nav-btn nav-btn-transcript" id="nav-btn-innactive" onclick="window.location.href='/transcript'">transcript</div>
-            <!--<button class="nav-btn" id="nav-btn-innactive">art</button>-->
+            <div class="nav-btn nav-btn-transcript" id="nav-btn-innactive" onclick="window.location.href='/transcript'">coursework</div>
     
         </div>
 
@@ -41,6 +42,9 @@
     {{!base}} <!--%include-->
 
     <button id="theme-btn" onclick="toggleTheme()"><i id="theme-btn-icon" class="fa-solid"></i></button>
+
+    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
 
 </body>
 

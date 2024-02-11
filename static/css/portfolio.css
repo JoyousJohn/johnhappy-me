@@ -1,7 +1,5 @@
-#portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 15vh auto;
+#portfolio-grid > div {
+    flex-grow: 1;
 }
 
 #ruwho-title {

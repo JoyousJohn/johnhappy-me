@@ -1,6 +1,6 @@
 %rebase templates/base.html
 
-<div id="portfolio-grid">
+<div class="portfolio-grid grid grid-cols-2 mt-5rem">
 
     <div id="ruwho-wrapper" style="border-right: 1px solid var(--secondary-col);">
 
@@ -14,10 +14,10 @@
         <p>RUwho is a service that allows for easier searching of the public Rutgers University people database. <u>RUwho is unaffiliated with Rutgers</u>.</p>
         <p>
             Designed to expand upon the official search platform; it's advantageous by returning results in real-time as a query is being entered alongside returning
-            contact info of each match without the need to make multiple requests for every individual.
+            contact info of each match without the need to open a new tab for each individual.
         </p>
         <p>
-            The backend uses Flask and integrates with a FastAPI wrapper to fetch from the Rutgers DB. This project furthered my experience with
+            A Flask backend integrates with a FastAPI wrapper to fetch from the Rutgers DB. This project furthered my experience with
             Flask, HTML, JS, CSS (including media quieries), and CORS. This was my first time using FastAPI & SlowAPI, Waitress, Intersection Observers, New Relic (NRQL), and HTTPX (over Requests) and my first time using AJAX, localStorage, asyncio, and rate limiting in production.
         </p>
         <!--<p>A public API wrapper will be available at a later date.</p>-->
@@ -31,16 +31,25 @@
         </a>
         <div id=stockscope-link style="text-align: center;"><a href="https://www.stockscope.net" target="_blank">StockScope.net</a></div>
 
-        <p>StockScope is a real-time press release aggregator for listed companies publishing on prominent newswires. It's in active development and is <u>not production ready</u>.
+        <p>StockScope is a real-time press release aggregator for listed companies publishing on prominent newswires.</p>
+
+        <p>
+            StockScope gathers releases from public newswire APIs, filters and categorizes them, and displays them in a central feed with the goal to provide investors a trading advantage without needing to constantly refresh multiple newsrooms.
         </p>
 
         <p>
-            StockScope gathers releases from public newswire APIs, filters and categorizes them, and displays them in a central feed with the goal to provide investors a trading advantage without needing to constantly refresh multiple difficult-to-read streams. This service became a reality when I couldn't find any alternatives to the existing $50+/month news collector platforms and became a web app when others requested access to this tool.
+            A Sanic backend displays data from a MongoDB database. This project expanded my experience with MongoDB (pymongo), front-end web dev (HTML/JS/CSS), scheduling, and asyncio. This was my first time using Sanic and websockets and my first time using webhooks, Google Analytics, sessions, and an async framework in production. 
         </p>
 
         <p>
-            A Sanic backend is used to display data from a MongoDB database. This project expanded my experience with MongoDB, pymongo, HTML5, CSS, JS, cron, lxml, asyncio, and Python web frameworks. This was my first time using Sanic and websockets and my first time using webhooks, Google Analytics, session management, and an async framework in production. 
+            Initially intended just to aggregate PRs, I saw an opportunity to shift StockScope's abilities to algorithmic trading following ChatGPT's surge. This project now autonomously trades American equities by running sentiment analysis on PRs in real time and making predictions based on recent market and historical data. I've since implemented multiple LLMS, including GPT-3.5/4, LLaMA, Qwen, PaLM, and Mistral models. This expansion familiarized me with backtesting (on countless months of high-quality logged data) and the Alpaca brokerage API.
         </p>
+
+        <p>
+            After months of paper trading to optimize and hone my prompt engineering and algos, the StockScope backend has generated consistent weekly returns outperforming the S&P and Nasdaq.  
+        </p>
+
+        
 
     </div>
 

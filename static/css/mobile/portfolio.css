@@ -1,0 +1,28 @@
+@media only screen and (max-width: 900px) {
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    #stockscope-title, #bricksdeals-title {
+        font-size: 4rem;
+    }
+
+    #ruwho-ru {
+        font-size: 5rem;
+    }
+
+    #ruwho-who {
+        font-size: 3.75rem;
+    }
+
+    #ruwho-wrapper {
+        border: none !important;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+}

@@ -16,6 +16,7 @@ def transcript():
 @route('/portfolio')
 def portfolio():
     heads = ['<link rel="stylesheet" href="css/portfolio.css">',
+    '<link rel="stylesheet" href="css/mobile/portfolio.css">',
     '<link href="https://fonts.cdnfonts.com/css/senbatsu" rel="stylesheet">',
     '<link href="https://fonts.cdnfonts.com/css/indian-steeds" rel="stylesheet">',
     '<link href="https://fonts.cdnfonts.com/css/omnes-2" rel="stylesheet">',
@@ -28,6 +29,10 @@ def portfolio():
 @route('/css/<file>')
 def send_css(file):
     return static_file(file, root='static/css/')
+
+@route('/css/mobile/<file>')
+def send_css(file):
+    return static_file(file, root='static/css/mobile/')
 
 @route('/js/<file>')
 def send_js(file):
