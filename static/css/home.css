@@ -20,13 +20,20 @@ body  {
 #nav-wrapper {
     position: fixed;
     inset: 0 0 auto 0;
-    /* background-color: var(--background-col); */
+    background-color: var(--background-col);
     margin: 0.5rem;
+    width: min-content;
+    transition: 200ms ease;
 }
 
 #nav-grid {
     display: flex;
     column-gap: 0.5rem;
+    border: 1px solid white;
+    width: min-content;
+    padding: 0.2rem;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 8px var(--primary-col);
     /* grid-template-columns: repeat(4, 1fr); */
     /* justify-content: space-between; */
     /*box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
@@ -38,7 +45,7 @@ body  {
     font: 1.5rem Chivo Mono;
     border: none;
     transition: 0.15s;
-    border-radius: 1rem;
+    border-radius: 2rem;
 }
 
 #nav-btn:hover {
