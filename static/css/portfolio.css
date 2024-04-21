@@ -43,6 +43,22 @@
     line-height: 0.9;
 }
 
+#ruguessr-title {
+    font: 5rem 'Minguwest';
+    font-style: normal;
+    color: var(--primary-col);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    line-height: 0.9;
+    margin-left: 1rem;
+}
+
+.ruguessr-os {
+    color: var(--a-color) !important;
+}
+
 a {
     color: var(--a-color);
     font: 1.8rem Montserrat;

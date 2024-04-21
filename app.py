@@ -23,7 +23,8 @@ def portfolio():
     '<link href="https://fonts.cdnfonts.com/css/sweet-bread?styles=149710" rel="stylesheet">',
     '<link href="https://fonts.cdnfonts.com/css/hubballi" rel="stylesheet">', 
     '<link href="https://fonts.cdnfonts.com/css/freitag-trial" rel="stylesheet">',
-    '<link href="https://fonts.cdnfonts.com/css/division-one" rel="stylesheet">']
+    '<link href="https://fonts.cdnfonts.com/css/division-one" rel="stylesheet">',
+    '    <link href="https://fonts.cdnfonts.com/css/minguwest" rel="stylesheet">']
     return template('templates/portfolio.html', heads=heads, t=time.time())
 
 @route('/css/<file>')
@@ -37,6 +38,10 @@ def send_css(file):
 @route('/js/<file>')
 def send_js(file):
     return static_file(file, root='static/js/')
+
+@route('/img/<file>')
+def send_js(file):
+    return static_file(file, root='static/img/')
 
 if __name__ == '__main__':
     from dotenv import load_dotenv

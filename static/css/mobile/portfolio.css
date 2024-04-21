@@ -7,7 +7,11 @@
     }
 
     #stockscope-title, #bricksdeals-title {
-        font-size: 4rem;
+        font-size: 3rem;
+    }
+
+    #ruwho-title, #stockscope-title {
+        height: auto;
     }
 
     #ruwho-ru {
