@@ -1,5 +1,14 @@
-#portfolio-grid > div {
+/* #portfolio-grid > div {
     flex-grow: 1;
+} */
+
+.portfolio-grid {
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    margin-bottom: 3rem;
+    padding: 2rem;
 }
 
 #ruwho-title {
@@ -29,11 +38,11 @@
     justify-content: center;
     align-items: center;
     user-select: none;
-    height: 7rem;
+    height: 5rem;
 }
 
 #bricksdeals-title {
-    font: 5.2rem mangoli;
+    font: 4.5rem mangoli;
     font-style: normal;
     color: var(--primary-col);
     display: flex;
@@ -41,6 +50,7 @@
     align-items: center;
     user-select: none;
     line-height: 0.9;
+    height: 5rem;
 }
 
 #ruguessr-title {

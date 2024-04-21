@@ -2,89 +2,97 @@
 
 <div class="portfolio-grid grid grid-cols-2 mt-5rem">
 
-    <div id="ruwho-wrapper" style="border-right: 1px solid var(--secondary-col);">
-
-        <a href="https://www.ruwho.icu" target="_blank" style="text-decoration: none;">
-            <div id="ruwho-title">
-                <span id="ruwho-ru">RU</span> <span id="ruwho-who">who</span>     
-            </div>
-        </a>
-        <div id=ruwho-link style="text-align: center;"><a href="https://www.ruwho.icu" target="_blank">RUwho.icu</a></div>
+    <div>
+        <div id="stockscope-wrapper" class="portfolio-item">
+    
+            <a href="https://www.stockscope.net" target="_blank" style="text-decoration: none;">
+                <div id="stockscope-title">StockScope</div>     
+            </a>
+            <div id=stockscope-link style="text-align: center;"><a href="https://www.stockscope.net" target="_blank">StockScope.net</a></div>
+    
+            <p>StockScope is a real-time press release aggregator for listed companies publishing on prominent newswires.</p>
+    
+            <p>
+                StockScope gathers releases from public newswire APIs, filters and categorizes them, and displays them in a central feed with the goal to provide investors a trading advantage without needing to constantly refresh multiple newsrooms.
+            </p>
+    
+            <p>
+                A Sanic backend displays data from a MongoDB database. This project expanded my experience with MongoDB (pymongo), front-end web dev (HTML/JS/CSS), scheduling, and asyncio. This was my first time using Sanic and websockets and my first time using webhooks, Google Analytics, sessions, and an async framework in production. 
+            </p>
+    
+            <p>
+                Initially intended just to aggregate PRs, I saw an opportunity to shift StockScope's abilities to algorithmic trading following ChatGPT's surge. This project now autonomously trades American equities by running sentiment analysis on PRs in real time and making predictions based on recent market and historical data. I've since implemented multiple LLMS, including GPT-3.5/4, LLaMA, Qwen, PaLM, and Mistral models. This expansion familiarized me with backtesting (on countless months of high-quality logged data) and the Alpaca brokerage API.
+            </p>
+    
+            <p>
+                After months of paper trading to optimize and hone my prompt engineering and algos, the StockScope backend has generated consistent weekly returns outperforming the S&P and Nasdaq.  
+            </p>
+    
+            
+    
+        </div>
         
-        <p>RUwho is a service that allows for easier searching of the public Rutgers University people database. <u>RUwho is unaffiliated with Rutgers</u>.</p>
-        <p>
-            Designed to expand upon the official search platform; it's advantageous by returning results in real-time as a query is being entered alongside returning
-            contact info of each match without the need to open a new tab for each individual.
-        </p>
-        <p>
-            A Flask backend integrates with a FastAPI wrapper to fetch from the Rutgers DB. This project furthered my experience with
-            Flask, HTML, JS, CSS (including media quieries), and CORS. This was my first time using FastAPI & SlowAPI, Waitress, Intersection Observers, New Relic (NRQL), and HTTPX (over Requests) and my first time using AJAX, localStorage, asyncio, and rate limiting in production.
-        </p>
-        <!--<p>A public API wrapper will be available at a later date.</p>-->
+        <div id="ruwho-wrapper" class="portfolio-item">
 
-    </div>
-
-    <div id="stockscope-wrapper">
-
-        <a href="https://www.stockscope.net" target="_blank" style="text-decoration: none;">
-            <div id="stockscope-title">StockScope</div>     
-        </a>
-        <div id=stockscope-link style="text-align: center;"><a href="https://www.stockscope.net" target="_blank">StockScope.net</a></div>
-
-        <p>StockScope is a real-time press release aggregator for listed companies publishing on prominent newswires.</p>
-
-        <p>
-            StockScope gathers releases from public newswire APIs, filters and categorizes them, and displays them in a central feed with the goal to provide investors a trading advantage without needing to constantly refresh multiple newsrooms.
-        </p>
-
-        <p>
-            A Sanic backend displays data from a MongoDB database. This project expanded my experience with MongoDB (pymongo), front-end web dev (HTML/JS/CSS), scheduling, and asyncio. This was my first time using Sanic and websockets and my first time using webhooks, Google Analytics, sessions, and an async framework in production. 
-        </p>
-
-        <p>
-            Initially intended just to aggregate PRs, I saw an opportunity to shift StockScope's abilities to algorithmic trading following ChatGPT's surge. This project now autonomously trades American equities by running sentiment analysis on PRs in real time and making predictions based on recent market and historical data. I've since implemented multiple LLMS, including GPT-3.5/4, LLaMA, Qwen, PaLM, and Mistral models. This expansion familiarized me with backtesting (on countless months of high-quality logged data) and the Alpaca brokerage API.
-        </p>
-
-        <p>
-            After months of paper trading to optimize and hone my prompt engineering and algos, the StockScope backend has generated consistent weekly returns outperforming the S&P and Nasdaq.  
-        </p>
-
+            <a href="https://www.ruwho.icu" target="_blank" style="text-decoration: none;">
+                <div id="ruwho-title">
+                    <span id="ruwho-ru">RU</span> <span id="ruwho-who">who</span>     
+                </div>
+            </a>
+            <div id=ruwho-link style="text-align: center;"><a href="https://www.ruwho.icu" target="_blank">RUwho.icu</a></div>
+            
+            <p>RUwho is a service that allows for easier searching of the public Rutgers University people database. <u>RUwho is unaffiliated with Rutgers</u>.</p>
+            <p>
+                Designed to expand upon the official search platform; it's advantageous by returning results in real-time as a query is being entered alongside returning
+                contact info of each match without the need to open a new tab for each individual.
+            </p>
+            <p>
+                A Flask backend integrates with a FastAPI wrapper to fetch from the Rutgers DB. This project furthered my experience with
+                Flask, HTML, JS, CSS (including media quieries), and CORS. This was my first time using FastAPI & SlowAPI, Waitress, Intersection Observers, New Relic (NRQL), and HTTPX (over Requests) and my first time using AJAX, localStorage, asyncio, and rate limiting in production.
+            </p>
+            <!--<p>A public API wrapper will be available at a later date.</p>-->
+    
+        </div>
+    
         
-
     </div>
 
-    <div id="bricksdeals-wrapper">
+    <div>
+        
+        <div id="bricksdeals-wrapper" class="portfolio-item">
 
-        <a href="https://www.bricks.deals" target="_blank" style="text-decoration: none;">
-            <div id="bricksdeals-title">bricks.deals</div>     
-        </a>
-        <div id=bricksdeals-link style="text-align: center;"><a href="https://bricks.deals" target="_blank">bricks.deals</a></div>
-
-        <p>bricks.deals is a Lego deal aggregator among leading US retailers. Sets are filtered to show only below-retail-price and in-stock deals available for purchase online. Expired deals and deal durations are visible as well.</p>
-
-        <p>Deals can be sorted by various criteria and filtered by store and theme. This lightweight web app excludes the clutter present on these stores' individual sites in a concise and neat manner.</p>
-
-        <p>A Flask backend is used to fetch data from a MongoDB database while a scheduling container periodically updates it. This weekend project advanced my experience with Flask, MongoDB, frontend web development, and manipulating API data. This was my first time using bs4 in production and MX records.</p>
-
-    </div>
-
-    <div id="ruguessr-wrapper">
-
-        <a href="https://joyousjohn.github.io/ruguessr/" target="_blank" style="text-decoration: none;">
-            <div class="flex items-center content-center">
-                <img src="/img/favicon.png" height="60">
-                <div id="ruguessr-title">RutgersGuessr</div>    
-            </div>    
-        </a>
-        <div id=ruguessr-link style="text-align: center;"><a href="https://joyousjohn.github.io/ruguessr/" target="_blank">joyousjohn.github.io/ruguessr</a></div>
-
-        <p>RutgersGuessr is a clone of the GeoGeussr geography-guessing game that targets the Rutgers New Brunswick campuses, once again being <u>unaffiliated with Rutgers</u>.</p>
-
-        <p>RutgersGuessr runs statically without a web server. Images (of strictly public areas) were collected from online sources (i.e. rutgers.edu) and attribution is given where due. Leaflet renders the Mapbox map tiles.</p>
-
-        <p>This was another quick project that furthered my experience with mapping APIs, GeoJSON, and JS. This was the first time I served Mapbox tiles with Leaflet rather than Mapbox GL JS.</p>
-
-        <a href="https://github.com/JoyousJohn/ruguessr" target="_blank"><p class="ruguessr-os">RutgersGuessr is open-source.</p></a>
+            <a href="https://www.bricks.deals" target="_blank" style="text-decoration: none;">
+                <div id="bricksdeals-title">bricks.deals</div>     
+            </a>
+            <div id=bricksdeals-link style="text-align: center;"><a href="https://bricks.deals" target="_blank">bricks.deals</a></div>
+    
+            <p>bricks.deals is a Lego deal aggregator among leading US retailers. Sets are filtered to show only below-retail-price and in-stock deals available for purchase online. Expired deals and deal durations are visible as well.</p>
+    
+            <p>Deals can be sorted by various criteria and filtered by store and theme. This lightweight web app excludes the clutter present on these stores' individual sites in a concise and neat manner.</p>
+    
+            <p>A Flask backend is used to fetch data from a MongoDB database while a scheduling container periodically updates it. This weekend project advanced my experience with Flask, MongoDB, frontend web development, and manipulating API data. This was my first time using bs4 in production and MX records.</p>
+    
+        </div>
+    
+        <div id="ruguessr-wrapper" class="portfolio-item">
+    
+            <a href="https://joyousjohn.github.io/ruguessr/" target="_blank" style="text-decoration: none;">
+                <div class="flex items-center content-center">
+                    <img src="/img/favicon.png" height="60">
+                    <div id="ruguessr-title">RutgersGuessr</div>    
+                </div>    
+            </a>
+            <div id=ruguessr-link style="text-align: center;"><a href="https://joyousjohn.github.io/ruguessr/" target="_blank">joyousjohn.github.io/ruguessr</a></div>
+    
+            <p>RutgersGuessr is a clone of the GeoGeussr geography-guessing game that targets the Rutgers New Brunswick campuses, once again being <u>unaffiliated with Rutgers</u>.</p>
+    
+            <p>RutgersGuessr runs statically without a web server. Images (of strictly public areas) were collected from online sources (i.e. rutgers.edu) and attribution is given where due. Leaflet renders the Mapbox map tiles.</p>
+    
+            <p>This was another quick project that furthered my experience with mapping APIs, GeoJSON, and JS. This was the first time I served Mapbox tiles with Leaflet rather than Mapbox GL JS.</p>
+    
+            <a href="https://github.com/JoyousJohn/ruguessr" target="_blank"><p class="ruguessr-os">RutgersGuessr is open-source.</p></a>
+    
+        </div>
 
     </div>
 

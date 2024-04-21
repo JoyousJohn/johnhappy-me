@@ -6,6 +6,10 @@
         margin-bottom: 5rem;
     }
 
+    .portfolio-item {
+        flex-basis: 100%;
+    }
+
     #stockscope-title, #bricksdeals-title {
         font-size: 3rem;
     }
