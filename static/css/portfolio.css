@@ -30,7 +30,7 @@
     color: var(--primary-col);
 }
 
-#stockscope-title {
+.stockscope-title {
     font: 5.2rem Division One;
     font-style: normal;
     color: var(--primary-col);
@@ -39,6 +39,11 @@
     align-items: center;
     user-select: none;
     height: 5rem;
+}
+
+.stockscope-sub {
+    font-size: 2.5rem;
+    margin-top: -1rem;
 }
 
 #bricksdeals-title {

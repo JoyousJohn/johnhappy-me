@@ -6,29 +6,33 @@
         <div id="stockscope-wrapper" class="portfolio-item">
     
             <a href="https://www.stockscope.net" target="_blank" style="text-decoration: none;">
-                <div id="stockscope-title">StockScope</div>     
+                <div class="stockscope-title">StockScope</div>     
             </a>
             <div id=stockscope-link style="text-align: center;"><a href="https://www.stockscope.net" target="_blank">StockScope.net</a></div>
     
             <p>StockScope is a real-time press release aggregator for listed companies publishing on prominent newswires.</p>
     
-            <p>
-                StockScope gathers releases from public newswire APIs, filters and categorizes them, and displays them in a central feed with the goal to provide investors a trading advantage without needing to constantly refresh multiple newsrooms.
-            </p>
+            <p>StockScope gathers releases from public newswire APIs, filters and categorizes them, and displays them in a central feed with the goal to provide investors a trading advantage without needing to constantly refresh multiple newsrooms. LLMs additionally provide summaries and rationale.</p>
     
-            <p>
-                A Sanic backend displays data from a MongoDB database. This project expanded my experience with MongoDB (pymongo), front-end web dev (HTML/JS/CSS), scheduling, and asyncio. This was my first time using Sanic and websockets and my first time using webhooks, Google Analytics, sessions, and an async framework in production. 
-            </p>
+            <p>A Sanic backend displays data from a MongoDB database. This project expanded my experience with MongoDB (pymongo), front-end web dev (HTML/JS/CSS), scheduling, and asyncio. This was my first time using Sanic and websockets and my first time using webhooks, Google Analytics, sessions, and an async framework in production.</p>
+
+        </div>
+
+        <div id="stockscope-labs-wrapper" class="portfolio-item">
     
-            <p>
-                Initially intended just to aggregate PRs, I saw an opportunity to shift StockScope's abilities to algorithmic trading following ChatGPT's surge. This project now autonomously trades American equities by running sentiment analysis on PRs in real time and making predictions based on recent market and historical data. I've since implemented multiple LLMS, including GPT-3.5/4, LLaMA, Qwen, PaLM, and Mistral models. This expansion familiarized me with backtesting (on countless months of high-quality logged data) and the Alpaca brokerage API.
-            </p>
+            <a href="https://www.stockscope.net/labs" target="_blank" style="text-decoration: none;">
+                <div class="stockscope-title h-auto">StockScope</div>     
+                <div class="stockscope-title h-auto stockscope-sub">—— RESEARCH ——</div>     
+            </a>
+            <div id=stockscope-link style="text-align: center;"><a href="https://www.stockscope.net/labs" target="_blank">StockScope.net/labs</a></div>
     
-            <p>
-                After months of paper trading to optimize and hone my prompt engineering and algos, the StockScope backend has generated consistent weekly returns outperforming the S&P and Nasdaq.  
-            </p>
+            <p>StockScope Research is an experimental algorithmic trading platform utilizing language models for press release sentiment analysis.</p>
+
+            <p>Initially intended just to aggregate PRs, I saw an opportunity to shift StockScope's abilities to algorithmic trading following ChatGPT's surge. StockScope Research runs sentiment analysis on press releases in real-time, and, based on historical and present market behavior, predicts short-term stock movement. If an entry is successfully executed, an exit strategy will be chosen based on thousands of back-tested, high-quality releases.</p>
     
+            <p>Optimized, efficient algorithms have been created after months of paper trading and prompt engineering, constructing the StockScope Trading Model (STM). Performance is broken down and displayed publicly.</p>   
             
+            <p>This has became my primary hobby project and gave me experience using Alpaca. The STM relies on multiple models to operate, currently using GPT, Mixtral, and OpenChat models. </p>
     
         </div>
         
@@ -54,8 +58,9 @@
     
         </div>
     
-        
     </div>
+
+    
 
     <div>
         
