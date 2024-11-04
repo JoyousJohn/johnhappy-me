@@ -30,7 +30,7 @@
             const iconClass = theme === 'light' ? 'fa-moon' : 'fa-sun';
             
             window.themeButtonHTML = `
-                <button id="theme-btn">
+                <button id="theme-btn" onclick="toggleTheme();">
                     <i id="theme-btn-icon" class="fa ${iconClass}"></i>
                 </button>
             `;
@@ -54,7 +54,7 @@
 
     </div>
 
-    
+
     {{!base}} <!--%include-->
 
     <script>document.write(window.themeButtonHTML);</script>

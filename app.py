@@ -26,7 +26,8 @@ def portfolio():
         '<link href="https://fonts.cdnfonts.com/css/hubballi" rel="stylesheet">', 
         '<link href="https://fonts.cdnfonts.com/css/freitag-trial" rel="stylesheet">',
         '<link href="https://fonts.cdnfonts.com/css/division-one" rel="stylesheet">',
-        '<link href="https://fonts.cdnfonts.com/css/minguwest" rel="stylesheet">'
+        '<link href="https://fonts.cdnfonts.com/css/minguwest" rel="stylesheet">',
+        '<link href="https://fonts.cdnfonts.com/css/yusei-magic" rel="stylesheet">'
     ]
     return template('templates/portfolio.html', heads=heads, t=time.time())
 

@@ -74,6 +74,22 @@
     color: var(--a-color) !important;
 }
 
+#rubus-title {
+    font: 5rem 'Yusei Magic';
+    color: var(--primary-col);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    line-height: 0.9;
+    margin-left: 1rem;
+}
+
+#rubus-title > span {
+    color: rgb(233, 35, 35);
+    font-weight: bold;
+}
+
 a {
     color: var(--a-color);
     font: 1.8rem Montserrat;
