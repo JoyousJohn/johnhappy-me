@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
     <title>Happy J</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/9fec56898e.js" crossorigin="anonymous"></script>
@@ -20,9 +21,25 @@
             {{!h}}
         <%end%>
     <%end%>
+
+    <script>
+        (function() {
+            const theme = localStorage.getItem('theme') || 
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('theme', theme);
+            const iconClass = theme === 'light' ? 'fa-moon' : 'fa-sun';
+            
+            window.themeButtonHTML = `
+                <button id="theme-btn">
+                    <i id="theme-btn-icon" class="fa ${iconClass}"></i>
+                </button>
+            `;
+        })();
+    </script>
+
 </head>
 
-<body id="body-dark" onload="pageLoad()">
+<body id="body-dark">
 
     <div id="nav-wrapper">
 
@@ -38,10 +55,9 @@
     </div>
 
     
-
     {{!base}} <!--%include-->
 
-    <button id="theme-btn" onclick="toggleTheme()"><i id="theme-btn-icon" class="fa-solid"></i></button>
+    <script>document.write(window.themeButtonHTML);</script>
 
     <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
     <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
