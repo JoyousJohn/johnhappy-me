@@ -108,13 +108,15 @@
     
             <p>RUBus is a bus-tracking progressive web app (PWA) alternative to the Passio GO! app. <u>RUBus is unaffiliated with Rutgers University and Passio Technologies.</u></p>
 
-            <p>Passio is the bus service provider Rutgers switched to in the 2023 academic year. RUBus attempts to solve many of the issues students complain plague the Passio GO! apps and website, such as having a laggy, difficult-to-use UI with inaccurate bus ETAs and routes. RUBus uses and relies on the Passio API.</p>
+            <p>Passio is the bus service provider Rutgers switched to in the 2023 academic year. RUBus attempts to solve many of the issues students complain plague the Passio GO! apps and website; such as having a laggy, difficult-to-use UI with inaccurate bus ETAs and routes. RUBus uses and relies on the Passio API for basic bus info, positioning, and capacity.</p>
 
-            <p>RUBus features real-time bus locations and ETAs, the latter calculated from recent bus drives and time spent at stops instead of the static matrix distances Passio seems to use. Time stopped is shown to users, providing insight into whether a driver might be on break. Bus capacity (via Passio) and a live speed estimate are also shown. All information is updated live as it is received. Route colors, fonts, and other visuals can be customized. Individual routes can easily be selected.</p>
+            <p>RUBus features real-time bus locations and ETAs, the latter calculated from recent travel times and dwell periods at stops rather than relying on matrix distances. Time stopped is shown to users, providing insight into potential breaks and other delays. Bus capacity and a live speed estimate are also shown. All data is updated live as it is received. Route colors, fonts, and other UI elements can be customized. Individual routes can easily be selected.</p>
 
-            <p>Backends, written in Python, track and calculate bus and stop ETAs, transmitting via WebSocket. The frontend uses a Leaflet map and is served statically while a FastAPI app sends data to the client, offloading demanding tasks to the server. I chose to make a PWA so RUBus wouldn't take up storage on phones, could be improved without updates, and unifies all OS's to a single stack instead of requiring a separate app for each.</p>
+            <p>Backends, written in Python, track and calculate bus and stop ETAs, transmitting via WebSocket. The frontend uses a Leaflet map and is served statically while a FastAPI app sends data to the client, offloading demanding tasks to the server. I chose to make a PWA to not take up storage on phones, enable seemless updates, and unify all operating systems onto a single codebase.</p>
 
-            <p>This project furthered my experience with Python, web frameworks, and front-end web development. This was my first ever PWA and first time using Cloudflare Pages.</p>
+            <p>This project furthered my experience with Python, web frameworks, and front-end web development. This was my first ever PWA and first time hosting on Cloudflare Pages.</p>
+
+            <a href="https://github.com/JoyousJohn/rubus-public" target="_blank"><p class="rubus-os">The RUBus front-end is open-source.</p></a>
 
         </div>
 
