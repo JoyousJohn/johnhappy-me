@@ -3,7 +3,9 @@
 } */
 
 .portfolio-grid {
+    grid-template-columns: 1fr 3fr;
     flex-wrap: wrap;
+    margin: 5rem 5rem 0 1rem;
 }
 
 .portfolio-item {
@@ -13,10 +15,8 @@
 
 #ruwho-title {
     display: flex;
-    justify-content: center;
     align-items: flex-end;
     user-select: none;
-    height: 7rem;
 }
 
 #ruwho-ru {
@@ -30,12 +30,15 @@
     color: var(--primary-col);
 }
 
+#ruwho-title > span {
+    /* height: 2rem; */
+}
+
 .stockscope-title {
     font: 5.2rem Division One;
     font-style: normal;
     color: var(--primary-col);
     display: flex;
-    justify-content: center;
     align-items: center;
     user-select: none;
     height: 5rem;
@@ -46,16 +49,24 @@
     margin-top: -1rem;
 }
 
+.deeplyresearched-title {
+    font: 3.5rem Inter Tight;
+    font-style: normal;
+    color: var(--primary-col);
+    display: flex;
+    align-items: center;
+    user-select: none;
+    height: 5rem;
+}
+
 #bricksdeals-title {
     font: 4.5rem mangoli;
     font-style: normal;
     color: var(--primary-col);
     display: flex;
-    justify-content: center;
     align-items: center;
     user-select: none;
-    line-height: 0.9;
-    height: 5rem;
+    line-height: 0.6;
 }
 
 #ruguessr-title {
@@ -63,7 +74,6 @@
     font-style: normal;
     color: var(--primary-col);
     display: flex;
-    justify-content: center;
     align-items: center;
     user-select: none;
     line-height: 0.9;
@@ -75,14 +85,12 @@
 }
 
 #rubus-title {
-    font: 5rem 'Yusei Magic';
+    font: 5rem 'pp neue montreal';
     color: var(--primary-col);
     display: flex;
-    justify-content: center;
     align-items: center;
     user-select: none;
     line-height: 0.9;
-    margin-left: 1rem;
 }
 
 #rubus-title > span {
@@ -93,10 +101,10 @@
 a {
     color: var(--a-color);
     font: 1.8rem Montserrat;
+    text-align: left;
 }
 
 p {
     color: var(--secondary-col);
     font: 1.2rem Montserrat;
-    margin: 1.3em;
 }

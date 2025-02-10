@@ -5,31 +5,9 @@ import os, time
 def index():
     return template('templates/index.html', t=time.time())
 
-@route('/transcript')
-def transcript():
-    return template('templates/transcript.html', t=time.time())
-
 @route('/contact')
 def transcript():
     return template('templates/contact.html', t=time.time())
-
-@route('/portfolio')
-def portfolio():
-    heads = [
-        '<link rel="stylesheet" href="css/portfolio.css">',
-        '<link rel="stylesheet" href="css/wind.css">',
-        '<link rel="stylesheet" href="css/mobile/portfolio.css">',
-        '<link href="https://fonts.cdnfonts.com/css/senbatsu" rel="stylesheet">',
-        '<link href="https://fonts.cdnfonts.com/css/indian-steeds" rel="stylesheet">',
-        '<link href="https://fonts.cdnfonts.com/css/omnes-2" rel="stylesheet">',
-        '<link href="https://fonts.cdnfonts.com/css/sweet-bread?styles=149710" rel="stylesheet">',
-        '<link href="https://fonts.cdnfonts.com/css/hubballi" rel="stylesheet">', 
-        '<link href="https://fonts.cdnfonts.com/css/freitag-trial" rel="stylesheet">',
-        '<link href="https://fonts.cdnfonts.com/css/division-one" rel="stylesheet">',
-        '<link href="https://fonts.cdnfonts.com/css/minguwest" rel="stylesheet">',
-        '<link href="https://fonts.cdnfonts.com/css/yusei-magic" rel="stylesheet">'
-    ]
-    return template('templates/portfolio.html', heads=heads, t=time.time())
 
 @route('/css/<file>')
 def send_css(file):
