@@ -1,11 +1,20 @@
-/* #portfolio-grid > div {
-    flex-grow: 1;
+.portfolio-grid {
+    grid-template-columns: 1fr 3.5fr;
+    padding: 5rem 1rem;
+    column-gap: 2rem;
+}
+
+.portfolio-previews {
+    row-gap: 2rem;
+    align-items: center;
+}
+
+/* .portfolio-previews > div {
+    border: 1px solid white;
 } */
 
-.portfolio-grid {
-    grid-template-columns: 1fr 3fr;
-    flex-wrap: wrap;
-    margin: 5rem 5rem 0 1rem;
+.portfolio-previews > div > div {
+    height: 2rem;
 }
 
 .portfolio-item {
@@ -28,10 +37,6 @@
 #ruwho-who {
     font: 5.2rem senbatsu; 
     color: var(--primary-col);
-}
-
-#ruwho-title > span {
-    /* height: 2rem; */
 }
 
 .stockscope-title {

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&family=Montserrat:wght@500&family=Poppins:wght@200&display=swap" rel="stylesheet">    
     <link href="https://fonts.cdnfonts.com/css/mangoli" rel="stylesheet">
     <script src="js/theme.js"></script>
+    <script defer src="js/portfolio.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/transcript.css">
@@ -52,9 +53,9 @@
 
         <div id="nav-grid">
 
-            <div class="nav-btn nav-btn-portfolio" id="nav-btn-innactive" onclick="window.location.href='/portfolio'">portfolio</div>
+            <div class="nav-btn nav-btn-portfolio" id="nav-btn-innactive" onclick="window.location.href='/'">portfolio</div>
             <div class="nav-btn nav-btn-contact " id="nav-btn-innactive" onclick="window.location.href='/contact'">contact</div>
-            <div class="nav-btn nav-btn-home" id="nav-btn-innactive" onclick="window.location.href='/'">home</div>
+            <!-- <div class="nav-btn nav-btn-home" id="nav-btn-innactive" onclick="window.location.href='/'">home</div> -->
             <div class="nav-btn nav-btn-transcript" id="nav-btn-innactive" onclick="window.location.href='/transcript'">coursework</div>
     
         </div>
@@ -63,7 +64,7 @@
 
     <div class="portfolio-grid grid">
 
-        <div class="portfolio-previews flex flex-col">
+        <div>
 
         </div>
 
@@ -78,11 +79,12 @@
         
                 <p>StockScope is a real-time press release aggregator for listed companies publishing on prominent newswires.</p>
         
-                <p>StockScope gathers releases from public newswire APIs, filters and categorizes them, and displays them in a central feed with the goal to provide investors a trading advantage without needing to constantly refresh multiple newsrooms. LLMs additionally provide summaries and rationale.</p>
+                <p>StockScope gathers releases from public newswire APIs, filters and categorizes them, and displays them in a central feed with the goal of providing investors with a trading advantage without needing to constantly refresh multiple newsrooms. LLMs additionally provide summaries and rationale.</p>
         
                 <p>A Sanic backend displays data from a MongoDB database. This project expanded my experience with MongoDB (pymongo), front-end web dev (HTML/JS/CSS), scheduling, and asyncio. This was my first time using Sanic and websockets and my first time using webhooks, Google Analytics, sessions, and an async framework in production.</p>
 
             </div>
+
 
             <div id="deeplyresearched-wrapper" class="portfolio-item">
         
@@ -91,93 +93,14 @@
                 </a>
                 <div><a href="https://github.com/JoyousJohn/deeply-researched" target="_blank">GitHub Repo</a></div>
         
-                <p>StockScope is a real-time press release aggregator for listed companies publishing on prominent newswires.</p>
-        
-                <p>StockScope gathers releases from public newswire APIs, filters and categorizes them, and displays them in a central feed with the goal to provide investors a trading advantage without needing to constantly refresh multiple newsrooms. LLMs additionally provide summaries and rationale.</p>
-        
-                <p>A Sanic backend displays data from a MongoDB database. This project expanded my experience with MongoDB (pymongo), front-end web dev (HTML/JS/CSS), scheduling, and asyncio. This was my first time using Sanic and websockets and my first time using webhooks, Google Analytics, sessions, and an async framework in production.</p>
+                <p>Deeply Researched is an open-source clone of OpenAI's Deep Research capabilities.</p>
+
+                <p>Rather than using an expensive fine-tuned reasoning model, Deeply Researched can mimick Deep Research's performance via careful prompt chaining with standard decoder models. Deeply Researched constantly checks its progress, backtracks, and refines its thought process while performing in-depth research tasks, including continually searching the web to discover required information. Satisfactory outputs have been shown with models as small as inexpensive Nova Lite 1.0 and Llama 70b.</p>
+
+                <p>Deeply Research primarily runs in browser with its logic written in JavaScript. A lightweight python ThreadingHTTPServer is used to make async web searches - no search API required. Most of the core logic was developed over a weekend.</p>
 
             </div>
 
-            <!-- <div id="stockscope-labs-wrapper" class="portfolio-item">
-        
-                <a href="https://www.stockscope.net/labs" target="_blank" style="text-decoration: none;">
-                    <div class="stockscope-title h-auto">StockScope</div>     
-                    <div class="stockscope-title h-auto stockscope-sub">—— RESEARCH ——</div>     
-                </a>
-                <div id=stockscope-link><a href="https://www.stockscope.net/labs" target="_blank">StockScope.net/labs</a></div>
-        
-                <p>StockScope Research is an experimental algorithmic trading platform utilizing language models for press release sentiment analysis.</p>
-
-                <p>Initially intended just to aggregate PRs, I saw an opportunity to shift StockScope's abilities to algorithmic trading following ChatGPT's surge. StockScope Research runs sentiment analysis on press releases in real-time, and, based on historical and present market behavior, predicts short-term stock movement. If an entry is successfully executed, an exit strategy will be chosen based on thousands of back-tested, high-quality releases.</p>
-        
-                <p>Optimized, efficient algorithms have been created after months of paper trading and prompt engineering, constructing the StockScope Trading Model (STM). Performance is broken down and displayed publicly.</p>   
-                
-                <p>This has became my primary hobby project and gave me experience using Alpaca. The STM relies on multiple models to operate, currently using GPT, Mixtral, and OpenChat models. </p>
-        
-            </div> -->
-            
-            <div id="ruwho-wrapper" class="portfolio-item">
-
-                <a href="https://www.ruwho.pages.dev" target="_blank" style="text-decoration: none;">
-                    <div id="ruwho-title">
-                        <span id="ruwho-ru">RU</span> <span id="ruwho-who">who</span>     
-                    </div>
-                </a>
-                <div><a href="https://www.ruwho.pages.dev" target="_blank">RUwho.pages.dev</a></div>
-                
-                <p>RUwho is a service that allows for easier searching of the public Rutgers University people database. <u>RUwho is unaffiliated with Rutgers</u>.</p>
-                <p>
-                    Designed to expand upon the official search platform; it's advantageous by returning results in real-time as a query is being entered alongside returning
-                    contact info of each match without the need to open a new tab for each individual.
-                </p>
-                <p>
-                    A Flask backend integrates with a FastAPI wrapper to fetch from the Rutgers DB. This project furthered my experience with
-                    Flask, HTML, JS, CSS (including media quieries), and CORS. This was my first time using FastAPI & SlowAPI, Waitress, Intersection Observers, New Relic (NRQL), and HTTPX (over Requests) and my first time using AJAX, localStorage, asyncio, and rate limiting in production.
-                </p>
-                <!--<p>A public API wrapper will be available at a later date.</p>-->
-        
-            </div>
-        
-                
-            <div id="bricksdeals-wrapper" class="portfolio-item">
-
-                <a href="https://www.bricks.deals" target="_blank" style="text-decoration: none;">
-                    <div id="bricksdeals-title">bricks.deals</div>     
-                </a>
-                <div><a href="https://bricks.deals" target="_blank">bricks.deals</a></div>
-        
-                <p>bricks.deals aggreates Lego set deals from US retailers. Sets are filtered to show only below-retail-price and in-stock deals available for purchase online. Past deals and durations are also shown.</p>
-        
-                <p>Deals can be sorted and filtered by various criteria. This lightweight web app excludes the clutter present on these stores' individual sites in a concise, neat, and efficient manner.</p>
-        
-                <p>The site also offers real-time push notifications as deals go live, featuring an image preview of the set and direct link to the product page in the notification.</p>
-
-                <p>A Flask backend is used with a MongoDB database while a scheduling container periodically updates it. Push notifications are powered by Firebase Cloud Messaging. This weekend project advanced my experience with Flask, MongoDB, and front-end web development. This was my first time using FCM and service workers.</p>
-        
-                <a href="https://github.com/JoyousJohn/bricks-deals-public" target="_blank"><p class="bricks-deals-os">The bricks.deals front-end is open-source.</p></a>
-
-            </div>
-        
-            <div id="ruguessr-wrapper" class="portfolio-item">
-        
-                <a href="https://joyousjohn.github.io/ruguessr/" target="_blank" style="text-decoration: none;">
-                    <div class="flex items-center">
-                        <img src="img/favicon.png" height="60">
-                        <div id="ruguessr-title">RutgersGuessr</div>    
-                    </div>    
-                </a>
-                <div><a href="https://joyousjohn.github.io/ruguessr/" target="_blank">joyousjohn.github.io/ruguessr</a></div>
-        
-                <p>RutgersGuessr is a clone of the GeoGeussr geography-guessing game that targets the Rutgers New Brunswick campuses, once again being <u>unaffiliated with Rutgers</u>.</p>
-        
-                <p>RutgersGuessr runs statically without a web server. Images (of strictly public areas) were collected from online sources (i.e. rutgers.edu) and attribution is given where due. Leaflet renders the Mapbox map tiles.</p>
-        
-                <p>This was another quick project that furthered my experience with mapping APIs, GeoJSON, and JS. This was the first time I served Mapbox tiles with Leaflet rather than Mapbox GL JS.</p>
-        
-                <a href="https://github.com/JoyousJohn/ruguessr" target="_blank"><p class="ruguessr-os">RutgersGuessr is open-source.</p></a>
-        
-            </div>
 
             <div id="rubus-wrapper" class="portfolio-item">
 
@@ -200,8 +123,108 @@
 
             </div>
 
+                
+            <div id="bricksdeals-wrapper" class="portfolio-item">
+
+                <a href="https://www.bricks.deals" target="_blank" style="text-decoration: none;">
+                    <div id="bricksdeals-title">bricks.deals</div>     
+                </a>
+                <div><a href="https://bricks.deals" target="_blank">bricks.deals</a></div>
+        
+                <p>bricks.deals aggreates Lego set deals from US retailers. Sets are filtered to show only below-retail-price and in-stock deals available for purchase online. Past deals and durations are also shown.</p>
+        
+                <p>Deals can be sorted and filtered by various criteria. This lightweight web app excludes the clutter present on these stores' individual sites in a concise, neat, and efficient manner.</p>
+        
+                <p>The site also offers real-time push notifications as deals go live, featuring an image preview of the set and direct link to the product page in the notification.</p>
+
+                <p>A Flask backend is used with a MongoDB database while a scheduling container periodically updates it. Push notifications are powered by Firebase Cloud Messaging. This weekend project advanced my experience with Flask, MongoDB, and front-end web development. This was my first time using FCM and service workers.</p>
+        
+                <a href="https://github.com/JoyousJohn/bricks-deals-public" target="_blank"><p class="bricks-deals-os">The bricks.deals front-end is open-source.</p></a>
+
+            </div>
+
+
+            <div id="ruwho-wrapper" class="portfolio-item">
+
+                <a href="https://www.ruwho.pages.dev" target="_blank" style="text-decoration: none;">
+                    <div id="ruwho-title">
+                        <span id="ruwho-ru">RU</span> <span id="ruwho-who">who</span>     
+                    </div>
+                </a>
+                <div><a href="https://www.ruwho.pages.dev" target="_blank">RUwho.pages.dev</a></div>
+                
+                <p>RUwho is a service that allows for easier searching of the public Rutgers University people database. <u>RUwho is unaffiliated with Rutgers</u>.</p>
+                <p>
+                    Designed to expand upon the official search platform; it's advantageous by returning results in real-time as a query is being entered alongside returning
+                    contact info of each match without the need to open a new tab for each individual.
+                </p>
+                <p>
+                    A Flask backend integrates with a FastAPI wrapper to fetch from the Rutgers DB. This project furthered my experience with
+                    Flask, HTML, JS, CSS (including media quieries), and CORS. This was my first time using FastAPI & SlowAPI, Waitress, Intersection Observers, New Relic (NRQL), and HTTPX (over Requests) and my first time using AJAX, localStorage, asyncio, and rate limiting in production.
+                </p>
+                <!--<p>A public API wrapper will be available at a later date.</p>-->
+        
+            </div>
+        
+            <div id="ruguessr-wrapper" class="portfolio-item">
+        
+                <a href="https://joyousjohn.github.io/ruguessr/" target="_blank" style="text-decoration: none;">
+                    <div class="flex items-center">
+                        <img src="img/favicon.png" height="60">
+                        <div id="ruguessr-title">RutgersGuessr</div>    
+                    </div>    
+                </a>
+                <div><a href="https://joyousjohn.github.io/ruguessr/" target="_blank">joyousjohn.github.io/ruguessr</a></div>
+        
+                <p>RutgersGuessr is a clone of the GeoGeussr geography-guessing game that targets the Rutgers New Brunswick campuses, once again being <u>unaffiliated with Rutgers</u>.</p>
+        
+                <p>RutgersGuessr runs statically without a web server. Images (of strictly public areas) were collected from online sources (i.e. rutgers.edu) and attribution is given where due. Leaflet renders the Mapbox map tiles.</p>
+        
+                <p>This was another quick project that furthered my experience with mapping APIs, GeoJSON, and JS. This was the first time I served Mapbox tiles with Leaflet rather than Mapbox GL JS.</p>
+        
+                <a href="https://github.com/JoyousJohn/ruguessr" target="_blank"><p class="ruguessr-os">RutgersGuessr is open-source.</p></a>
+        
+            </div>
+
+            
+
         </div>
 
+    </div>
+
+    <div class="portfolio-grid grid" style="position: fixed; inset: 0; z-index: -1;">
+        <div class="portfolio-previews flex flex-col" style="justify-content: space-evenly">
+
+            <div clas="stockscope-preview">
+                <div class="stockscope-title" style="font-size: 3rem;">StockScope</div>     
+            </div>
+
+            <div clas="deeply-researched-preview">
+                <div class="deeplyresearched-title" style="font-size: 2rem;">Deeply Researched</div>     
+            </div>
+                
+            <div clas="rubus-preview">
+                <div id="rubus-title" style="font-size: 2.5rem;"><span>RU</span>Bus</div>     
+            </div>
+
+            <div class="bricks-deals-preview">
+                <div id="bricksdeals-title" style="font-size: 2.5rem;">bricks.deals</div>     
+            </div>
+
+            <div class="ruwho-preview">
+                <div id="ruwho-title">
+                    <span id="ruwho-ru" style="font-size: 2.5rem;">RU</span> <span id="ruwho-who" style="font-size: 2rem;">who</span>     
+                </div>
+            </div>
+
+            <div class="ruguessr-preview">
+                <div class="flex items-center">
+                    <img src="img/favicon.png" height="35">
+                    <div id="ruguessr-title" style="font-size: 2.5rem; margin-left: 0.3rem;">RutgersGuessr</div>    
+                </div>  
+            </div>
+
+        </div>
     </div>
 
 <script>$('.nav-btn-portfolio').attr('id', 'nav-btn-active').attr('onclick', null);</script>
