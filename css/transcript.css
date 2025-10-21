@@ -9,12 +9,31 @@
     font-family: Chivo Mono;
 }
 
+.college-heading {
+    color: var(--primary-col);
+    font-family: Chivo Mono;
+    font-size: 1.15rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
 .transcript-table {
     font-size: 1.15rem;
     text-align: center;
 }
 
+.transcript-table td:first-child {
+    font-weight: bold;
+    color: var(--primary-col);
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.transcript-table td:last-child {
+    text-align: left;
+}
+
 td {
     color: var(--secondary-col);
 }
-
