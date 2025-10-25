@@ -1,2 +1,0 @@
-bottle==0.12.23
-python-dotenv==1.0.1
