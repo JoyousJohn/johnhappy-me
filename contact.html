@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Happy J</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/9fec56898e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&family=Montserrat:wght@500&family=Poppins:wght@200&display=swap" rel="stylesheet">    
+    <link href="https://fonts.cdnfonts.com/css/mangoli" rel="stylesheet">
+    <script src="js/theme.js"></script>
+    <script defer src="js/portfolio.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/transcript.css">
+    <link rel="stylesheet" href="css/theme_btn.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/wind.css">
+    <link rel="stylesheet" href="css/mobile/portfolio.css">
+
+    <script>
+        (function() {
+            const theme = localStorage.getItem('theme') || 
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('theme', theme);
+            const iconClass = theme === 'light' ? 'fa-moon' : 'fa-sun';
+            
+            window.themeButtonHTML = `
+                <button id="theme-btn" onclick="toggleTheme();">
+                    <i id="theme-btn-icon" class="fa ${iconClass}"></i>
+                </button>
+            `;
+        })();
+    </script>
+
+</head>
+
+
+<body id="body-dark">
+
+    <div id="nav-wrapper">
+        <div id="nav-grid">
+            <div class="nav-btn nav-btn-portfolio" id="nav-btn-innactive" onclick="window.location.href='/'">portfolio</div>
+            <div class="nav-btn nav-btn-contact " id="nav-btn-active">contact</div>
+            <div class="nav-btn nav-btn-transcript" id="nav-btn-innactive" onclick="window.location.href='/transcript'">coursework</div>
+        </div>
+    </div>
+        
+    <div class="flex content-center items-center h-100vh">
+
+        <div class="flex flex-col row-gap-0p5rem montserrat">
+            <a class="flex col-gap-1rem items-center var-col-primary decor-none link transition-100ms" href="mailto:john@johnhappy.me">
+                <i class="fa-regular fa-envelope font-2p5rem"></i>
+                <div class="font-1p5rem">john@johnhappy.me</div>
+            </a>
+            <a class="flex col-gap-1rem items-center var-col-primary decor-none link transition-100ms" href="mailto:john.happy@rutgers.edu">
+                <i class="fa-regular fa-envelope font-2p5rem"></i>
+                <div class="font-1p5rem">john.happy@rutgers.edu</div>
+            </a>
+            <a class="flex col-gap-1rem items-center var-col-primary decor-none link transition-100ms" href="https://github.com/JoyousJohn">
+                <i class="fa-brands fa-github font-2p5rem"></i>
+                <div class="font-1p5rem">JoyousJohn</div>
+            </a>
+            <div></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
