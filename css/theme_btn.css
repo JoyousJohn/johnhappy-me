@@ -9,6 +9,7 @@
     width: 3.5rem;
     aspect-ratio: 1;
     border-radius: 1rem;
+    z-index: 1;
 }
 
 #theme-btn:hover {

@@ -57,15 +57,3 @@ function scrollToProject(projectId) {
         requestAnimationFrame(animation);
     }
 }
-
-// Add event listeners to preview elements
-document.addEventListener('DOMContentLoaded', function() {
-    
-    const previewElements = document.querySelectorAll('.rubus-preview, .stockscope-preview, .bricks-deals-preview, .deeply-researched-preview, .ruwho-preview, .ruguessr-preview');
-    
-    previewElements.forEach(element => {
-        element.addEventListener('click', function(e) {
-            e.stopPropagation();
-        });
-    });
-});

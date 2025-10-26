@@ -40,4 +40,10 @@ function setTheme(theme) {
 
 $(document).ready(function() {
     // setFA();
+    
+    $(document).on('keydown', function(e) {
+        if (e.keyCode === 84 && !$(e.target).is('input, textarea')) {
+            toggleTheme();
+        }
+    });
 })
