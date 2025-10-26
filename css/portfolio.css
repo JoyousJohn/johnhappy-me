@@ -22,31 +22,14 @@
     padding: 2rem;
 }
 
-#ruwho-title {
-    display: flex;
-    align-items: flex-end;
-    user-select: none;
-}
-
-#ruwho-ru {
-    font: 7rem Indian Steeds;
-    font-weight: bold;
-    color: rgb(233, 35, 35);
-}
-
-#ruwho-who {
-    font: 5.2rem senbatsu; 
-    color: var(--primary-col);
-}
-
 .stockscope-title {
-    font: 5.2rem Division One;
+    font: 4rem Division One;
     font-style: normal;
     color: var(--primary-col);
     display: flex;
     align-items: center;
     user-select: none;
-    height: 5rem;
+    line-height: 0.7;
 }
 
 .stockscope-sub {
@@ -55,27 +38,46 @@
 }
 
 .deeplyresearched-title {
-    font: 3.5rem Inter Tight;
+    font: 2.7rem Inter Tight;
     font-style: normal;
     color: var(--primary-col);
     display: flex;
     align-items: center;
     user-select: none;
-    height: 5rem;
+    line-height: 0.9;
 }
 
 #bricksdeals-title {
-    font: 4.5rem mangoli;
+    font: 4rem mangoli;
     font-style: normal;
     color: var(--primary-col);
     display: flex;
     align-items: center;
     user-select: none;
-    line-height: 0.6;
+    line-height: 0.5;
+}
+
+#ruwho-title {
+    display: flex;
+    align-items: flex-end;
+    user-select: none;
+}
+
+#ruwho-ru {
+    font: 5rem Indian Steeds;
+    font-weight: bold;
+    color: rgb(233, 35, 35);
+    line-height: 0.85;
+}
+
+#ruwho-who {
+    font: 4.2rem senbatsu; 
+    color: var(--primary-col);
+    line-height: 0.7;
 }
 
 #ruguessr-title {
-    font: 5rem 'Minguwest';
+    font: 3.5rem 'Minguwest';
     font-style: normal;
     color: var(--primary-col);
     display: flex;
@@ -89,8 +91,20 @@
     color: var(--a-color) !important;
 }
 
+/* Preview elements hover effect */
+.rubus-preview, .stockscope-preview, .bricks-deals-preview, 
+.deeply-researched-preview, .ruwho-preview, .ruguessr-preview {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.rubus-preview:hover, .stockscope-preview:hover, .bricks-deals-preview:hover,
+.deeply-researched-preview:hover, .ruwho-preview:hover, .ruguessr-preview:hover {
+    transform: scale(1.05);
+}
+
 #rubus-title {
-    font: 5rem 'pp neue montreal';
+    font: 3.5rem Bricolage Grotesque;
     color: var(--primary-col);
     display: flex;
     align-items: center;
@@ -105,7 +119,7 @@
 
 a {
     color: var(--a-color);
-    font: 1.8rem Montserrat;
+    font: 1.5rem Montserrat;
     text-align: left;
 }
 

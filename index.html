@@ -29,6 +29,7 @@
     <link href="https://fonts.cdnfonts.com/css/minguwest" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/pp-neue-montreal" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/inter-tight" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/bricolage-grotesque" rel="stylesheet">
 
     <script>
         (function() {
@@ -109,22 +110,6 @@
 
             </div>
 
-
-            <div id="deeplyresearched-wrapper" class="portfolio-item">
-        
-                <a href="https://github.com/JoyousJohn/deeply-researched" target="_blank" style="text-decoration: none;">
-                    <div class="deeplyresearched-title">Deeply Researched</div>     
-                </a>
-                <div><a href="https://github.com/JoyousJohn/deeply-researched" target="_blank">GitHub Repo</a></div>
-        
-                <p>Deeply Researched is an open-source clone of OpenAI's Deep Research capabilities.</p>
-
-                <p>Rather than using an expensive fine-tuned reasoning model, Deeply Researched can mimick Deep Research's performance via careful prompt chaining with standard decoder models. Deeply Researched constantly checks its progress, backtracks, and refines its thought process while performing in-depth research tasks, including continually searching the web to discover required information. Satisfactory outputs have been shown with models as small as inexpensive Nova Lite 1.0 and Llama 70b.</p>
-
-                <p>Deeply Research primarily runs in browser with its logic written in JavaScript. A lightweight python ThreadingHTTPServer is used to make async web searches - no search API required. Most of the core logic was developed over a weekend.</p>
-
-            </div>
-
             <div id="bricksdeals-wrapper" class="portfolio-item">
 
                 <a href="https://www.bricks.deals" target="_blank" style="text-decoration: none;">
@@ -144,6 +129,20 @@
 
             </div>
 
+            <div id="deeplyresearched-wrapper" class="portfolio-item">
+        
+                <a href="https://github.com/JoyousJohn/deeply-researched" target="_blank" style="text-decoration: none;">
+                    <div class="deeplyresearched-title">Deeply<br>Researched</div>     
+                </a>
+                <div><a href="https://github.com/JoyousJohn/deeply-researched" target="_blank">GitHub Repo</a></div>
+        
+                <p>Deeply Researched is an open-source clone of OpenAI's Deep Research capabilities.</p>
+
+                <p>Rather than using an expensive fine-tuned reasoning model, Deeply Researched can mimick Deep Research's performance via careful prompt chaining with standard decoder models. Deeply Researched constantly checks its progress, backtracks, and refines its thought process while performing in-depth research tasks, including continually searching the web to discover required information. Satisfactory outputs have been shown with models as small as inexpensive Nova Lite 1.0 and Llama 70b.</p>
+
+                <p>Deeply Research primarily runs in browser with its logic written in JavaScript. A lightweight python ThreadingHTTPServer is used to make async web searches - no search API required. Most of the core logic was developed over a weekend.</p>
+
+            </div>
 
             <div id="ruwho-wrapper" class="portfolio-item">
 
@@ -171,13 +170,13 @@
         
                 <a href="https://joyousjohn.github.io/ruguessr/" target="_blank" style="text-decoration: none;">
                     <div class="flex items-center">
-                        <img src="img/favicon.png" height="60">
+                        <img src="img/favicon.png" height="50">
                         <div id="ruguessr-title">RutgersGuessr</div>    
                     </div>    
                 </a>
                 <div><a href="https://joyousjohn.github.io/ruguessr/" target="_blank">joyousjohn.github.io/ruguessr</a></div>
         
-                <p>RutgersGuessr is a clone of the GeoGeussr geography-guessing game that targets the Rutgers New Brunswick campuses, once again being <u>unaffiliated with Rutgers</u>.</p>
+                <p>RutgersGuessr is a clone of the GeoGeussr geography-guessing game that targets the Rutgers New Brunswick campuses.</p>
         
                 <p>RutgersGuessr runs statically without a web server. Images (of strictly public areas) were collected from online sources (i.e. rutgers.edu) and attribution is given where due. Leaflet renders the Mapbox map tiles.</p>
         
@@ -186,42 +185,38 @@
                 <a href="https://github.com/JoyousJohn/ruguessr" target="_blank"><p class="ruguessr-os">RutgersGuessr is open-source.</p></a>
         
             </div>
-
-            
-
         </div>
-
     </div>
 
-    <div class="portfolio-grid grid" style="position: fixed; inset: 0; z-index: -1;">
-        <div class="portfolio-previews flex flex-col" style="justify-content: space-evenly">
+    <div class="portfolio-grid grid" style="position: fixed; inset: 0; z-index: 1;">
+        <div class="portfolio-previews flex flex-col" style="justify-content: space-evenly;">
 
-            <div clas="rubus-preview">
+            <div class="rubus-preview" onclick="scrollToProject('rubus-wrapper')">
                 <div id="rubus-title" style="font-size: 2.5rem;"><span>RU</span>Bus</div>     
             </div>
 
-            <div clas="stockscope-preview">
-                <div class="stockscope-title" style="font-size: 3rem;">StockScope</div>     
+            <div class="stockscope-preview" onclick="scrollToProject('stockscope-wrapper')">
+                <div class="stockscope-title" style="font-size: 2rem;">StockScope</div>     
             </div>
 
-            <div clas="deeply-researched-preview">
-                <div class="deeplyresearched-title" style="font-size: 2rem;">Deeply Researched</div>     
+            <div class="bricks-deals-preview" onclick="scrollToProject('bricksdeals-wrapper')">
+                <div id="bricksdeals-title" style="font-size: 2rem;">bricks.deals</div>     
+            </div>
+
+            <div class="deeply-researched-preview" onclick="scrollToProject('deeplyresearched-wrapper')">
+                <div class="deeplyresearched-title" style="font-size: 1.5rem;">Deeply<br>Researched</div>     
             </div>
                 
-            <div class="bricks-deals-preview">
-                <div id="bricksdeals-title" style="font-size: 2.5rem;">bricks.deals</div>     
-            </div>
-
-            <div class="ruwho-preview">
+            <div class="ruwho-preview" onclick="scrollToProject('ruwho-wrapper')">
                 <div id="ruwho-title">
                     <span id="ruwho-ru" style="font-size: 2.5rem;">RU</span> <span id="ruwho-who" style="font-size: 2rem;">who</span>     
                 </div>
             </div>
 
-            <div class="ruguessr-preview">
+            <div class="ruguessr-preview" onclick="scrollToProject('ruguessr-wrapper')">
                 <div class="flex items-center">
                     <img src="img/favicon.png" height="35">
-                    <div id="ruguessr-title" style="font-size: 2.5rem; margin-left: 0.3rem;">RutgersGuessr</div>    
+                    <div id="ruguessr-title" style="font-size: 2rem; margin-left: 0.3rem;">Rutgers<br>Guessr</div>    
                 </div>  
             </div>
 
@@ -230,8 +225,8 @@
 
 <script>document.write(window.themeButtonHTML);</script>
 
-    <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
-    <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
+<script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+<noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt="" referrerpolicy="no-referrer-when-downgrade" /></noscript>
 
 </body>
 
