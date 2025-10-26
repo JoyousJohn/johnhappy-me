@@ -52,8 +52,8 @@
     <div id="nav-wrapper">
         <div id="nav-grid">
             <div class="nav-btn nav-btn-portfolio" id="nav-btn-active">portfolio</div>
-            <div class="nav-btn nav-btn-transcript" id="nav-btn-innactive" onclick="window.location.href='/transcript'">coursework</div>
             <div class="nav-btn nav-btn-contact " id="nav-btn-innactive" onclick="window.location.href='/contact'">contact</div>
+            <div class="nav-btn nav-btn-transcript" id="nav-btn-innactive" onclick="window.location.href='/transcript'">coursework</div>
         </div>
     </div>
 
@@ -64,6 +64,35 @@
         </div>
 
         <div>
+
+            <div id="rubus-wrapper" class="portfolio-item">
+
+                <a href="https://rubus.live" target="_blank" style="text-decoration: none;">
+                    <div id="rubus-title"><span>RU</span>Bus</div>     
+                </a>
+                <div><a href="https://rubus.live" target="_blank">RUBus.live</a></div>
+        
+                <p>RUBus is a web app tracking the Rutgers University bus system.</p>
+
+                <p>RUBus is the leading alternative to the official Passio app and has <strong>tens of thousands</strong> of unique monthly users geo-located across the Rutgers campuses. In September 2025, the first month of public release, it responded to over <strong>7 million SSL requests</strong>, delivered <strong>38 million socket messages</strong> to all clients, and served over <strong>100 GB of bandwidth</strong>. This was reached solely by word of mouth with minimal advertising; I expect usage to grow significantly in the future.</p>
+
+                <p>Passio is the bus service provider Rutgers switched to in 2023. RUBus attempts to solve many of the issues students complain plague the Passio GO! apps and website; such as having a laggy, difficult-to-use UI with inaccurate bus ETAs and routes. RUBus relies on basic bus data from Passio (positioning, capacity), but calculates all other data (ETAs, time stopped, etc.) itself. This has made RUBus by far the most accurate bus app available to Rutgers students as the other unofficial apps also rely on Passio's wrong ETAs.</p>
+
+                <p>RUBus features real-time bus locations and ETAs, the latter proprietarily calculated on server so accurately that ETAs can even be shown down to the second. Time stopped and past breaks are shown, providing insight into potential breaks. All data is updated live. UI elements have deep customization, even with the option to use the bus marker styles from the past bus apps Rutgers used over the years. Individual routes can easily be selected.</p>
+
+                <p>A chatbot for answering complex questions is also available. It's capable of answering questions about what buses stop at what stops, what routes connect buildings, bus arrivals, when a user should leave to reach a destination, service times of routes, delays, service changes, network busyness, and more. This natural language capability is especially useful for new students not yet familiar with buses or buildings. Kimi K2 and the gpt-oss family of models are currently powering the assistant.</p>
+
+                <p>RUBus includes an advanced navigation system that provides routing between hundreds of Rutgers campus buildings. The system utilizes matrix distance calculations to display all available bus route options between selected origin and destination points and considers both live and historical bus ETAs and wait times at stops.</p>
+
+                <p>Python backends track and calculate bus and stop ETAs, transmitting via WebSocket. The frontend uses a Leaflet map and is served statically while a FastAPI app sends data to the client, offloading demanding tasks to the server. I chose to make a PWA to not take up storage on phones, enable seemless updates, and unify all operating systems onto a single codebase. I believe not requiring installs is a significant reason RUBus became the most popular unofficial bus app.</p>
+
+                <p>This project furthered my experience with Python, web frameworks, and especially front-end JS web development. This was my first ever PWA, my first time hosting on Cloudflare Pages, and my first time launching an LLM tool-calling server. I first began on the RUBus concept in September of 2023 and have continued development in my off time for the past two years.</p>
+
+                <p><em>RUBus is not affiliated with Rutgers University or Passio Technologies.</em></p>
+
+                <a href="https://github.com/JoyousJohn/rubus-public" target="_blank"><p class="rubus-os">The RUBus client is open-source.</p></a>
+
+            </div>
 
             <div id="stockscope-wrapper" class="portfolio-item">
         
@@ -96,29 +125,6 @@
 
             </div>
 
-
-            <div id="rubus-wrapper" class="portfolio-item">
-
-                <a href="https://rubus.live" target="_blank" style="text-decoration: none;">
-                    <div id="rubus-title"><span>RU</span>Bus</div>     
-                </a>
-                <div><a href="https://rubus.live" target="_blank">RUBus.live</a></div>
-        
-                <p>RUBus is a bus-tracking progressive web app (PWA) alternative to the Passio GO! app. <u>RUBus is unaffiliated with Rutgers University and Passio Technologies.</u></p>
-
-                <p>Passio is the bus service provider Rutgers switched to in the 2023 academic year. RUBus attempts to solve many of the issues students complain plague the Passio GO! apps and website; such as having a laggy, difficult-to-use UI with inaccurate bus ETAs and routes. RUBus uses and relies on the Passio API for basic bus info, positioning, and capacity.</p>
-
-                <p>RUBus features real-time bus locations and ETAs, the latter calculated from recent travel times and dwell periods at stops rather than relying on matrix distances. Time stopped is shown to users, providing insight into potential breaks and other delays. Bus capacity and a live speed estimate are also shown. All data is updated live as it is received. Route colors, fonts, and other UI elements can be customized. Individual routes can easily be selected.</p>
-
-                <p>Backends, written in Python, track and calculate bus and stop ETAs, transmitting via WebSocket. The frontend uses a Leaflet map and is served statically while a FastAPI app sends data to the client, offloading demanding tasks to the server. I chose to make a PWA to not take up storage on phones, enable seemless updates, and unify all operating systems onto a single codebase.</p>
-
-                <p>This project furthered my experience with Python, web frameworks, and front-end web development. This was my first ever PWA and first time hosting on Cloudflare Pages.</p>
-
-                <a href="https://github.com/JoyousJohn/rubus-public" target="_blank"><p class="rubus-os">The RUBus front-end is open-source.</p></a>
-
-            </div>
-
-                
             <div id="bricksdeals-wrapper" class="portfolio-item">
 
                 <a href="https://www.bricks.deals" target="_blank" style="text-decoration: none;">
@@ -190,6 +196,10 @@
     <div class="portfolio-grid grid" style="position: fixed; inset: 0; z-index: -1;">
         <div class="portfolio-previews flex flex-col" style="justify-content: space-evenly">
 
+            <div clas="rubus-preview">
+                <div id="rubus-title" style="font-size: 2.5rem;"><span>RU</span>Bus</div>     
+            </div>
+
             <div clas="stockscope-preview">
                 <div class="stockscope-title" style="font-size: 3rem;">StockScope</div>     
             </div>
@@ -198,10 +208,6 @@
                 <div class="deeplyresearched-title" style="font-size: 2rem;">Deeply Researched</div>     
             </div>
                 
-            <div clas="rubus-preview">
-                <div id="rubus-title" style="font-size: 2.5rem;"><span>RU</span>Bus</div>     
-            </div>
-
             <div class="bricks-deals-preview">
                 <div id="bricksdeals-title" style="font-size: 2.5rem;">bricks.deals</div>     
             </div>

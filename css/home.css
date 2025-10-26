@@ -22,8 +22,9 @@ body  {
     inset: 0 0 auto 0;
     background-color: var(--background-col);
     margin: 0.5rem;
-    width: min-content;
     transition: 200ms ease;
+    display: flex;
+    justify-content: center;
 }
 
 #nav-grid {
