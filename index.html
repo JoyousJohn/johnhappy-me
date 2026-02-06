@@ -75,17 +75,17 @@
         
                 <p>RUBus is a web app tracking the Rutgers University bus system.</p>
 
-                <p>RUBus is the leading alternative to the official Passio app and has <strong>tens of thousands</strong> of unique monthly users geo-located across the Rutgers campuses. In September 2025, the first month of public release, it responded to over <strong>7 million SSL requests</strong>, delivered <strong>38 million socket messages</strong> to all clients, and served over <strong>100 GB of bandwidth</strong>. This was reached solely by word of mouth with minimal advertising; I expect usage to grow significantly in the future.</p>
+                <p>RUBus is the leading alternative to the official Passio app and has <strong>tens of thousands</strong> of unique monthly users geo-located across the Rutgers campuses; there were <strong>80,000+</strong> unique users in the fall 2025 semester. In September 2025, the first month of public release, it responded to over <strong>7 million SSL requests</strong>, delivered <strong>38 million socket messages</strong> to all clients, and served over <strong>100 GB of bandwidth</strong>. This was reached solely by word of mouth with minimal advertising; I expect usage to grow significantly in the future.</p>
 
-                <p>Passio is the bus service provider Rutgers switched to in 2023. RUBus attempts to solve many of the issues students complain plague the Passio GO! apps and website; such as having a laggy, difficult-to-use UI with inaccurate bus ETAs and routes. RUBus relies on basic bus data from Passio (positioning, capacity), but calculates all other data (ETAs, time stopped, etc.) itself. This has made RUBus by far the most accurate bus app available to Rutgers students as the other unofficial apps also rely on Passio's wrong ETAs.</p>
+                <p>Passio is the bus service provider Rutgers switched to in 2023. RUBus attempts to solve many of the issues students complain plague the Passio GO! apps and website; such as having a laggy, difficult-to-use UI with inaccurate bus ETAs and routes. RUBus relies on basic bus data from Passio (positioning, capacity), but calculates all other data (ETAs, time stopped, etc.) itself. This has made RUBus by far the most accurate bus app available to Rutgers students as the other unofficial apps also rely on Passio's poorly calculated ETAs.</p>
 
-                <p>RUBus features real-time bus locations and ETAs, the latter proprietarily calculated on server so accurately that ETAs can even be shown down to the second. Time stopped and past breaks are shown, providing insight into potential breaks. All data is updated live. UI elements have deep customization, even with the option to use the bus marker styles from the past bus apps Rutgers used over the years. Individual routes can easily be selected.</p>
+                <p>RUBus features real-time bus locations and ETAs, the latter proprietarily calculated on server so accurately that these can even be shown down to the second. Time stopped and past breaks are shown, giving insight into potential breaks. All data is updated live. UI elements have deep customization, even with the option to use the bus marker styles from the past bus apps Rutgers used over the years. Individual routes can easily be selected.</p>
 
                 <p>A chatbot for answering complex questions is also available. It's capable of answering questions about what buses stop at what stops, what routes connect buildings, bus arrivals, when a user should leave to reach a destination, service times of routes, delays, service changes, network busyness, and more. This natural language capability is especially useful for new students not yet familiar with buses or buildings. Kimi K2 and the gpt-oss family of models are currently powering the assistant.</p>
 
                 <p>RUBus includes an advanced navigation system that provides routing between hundreds of Rutgers campus buildings. The system utilizes matrix distance calculations to display all available bus route options between selected origin and destination points and considers both live and historical bus ETAs and wait times at stops.</p>
 
-                <p>Python backends track and calculate bus and stop ETAs, transmitting via WebSocket. The frontend uses a Leaflet map and is served statically while a FastAPI app sends data to the client, offloading demanding tasks to the server. I chose to make a PWA to not take up storage on phones, enable seemless updates, and unify all operating systems onto a single codebase. I believe not requiring installs is a significant reason RUBus became the most popular unofficial bus app.</p>
+                <p>Python backends track and calculate bus and stop ETAs, transmitting via WebSocket. The frontend uses a Leaflet map and is served statically while a FastAPI app sends data to the client, offloading demanding tasks to the server. I chose to make a PWA to not take up storage on phones, enable seemless updates, and unify all operating systems onto a single codebase. I believe not requiring installs is a significant reason the popularity of RUBus exploded.</p>
 
                 <p>This project furthered my experience with Python, web frameworks, and especially front-end JS web development. This was my first ever PWA, my first time hosting on Cloudflare Pages, and my first time launching an LLM tool-calling server. I first began on the RUBus concept in September of 2023 and have continued development in my off time for the past two years.</p>
 
@@ -146,12 +146,12 @@
 
             <div id="ruwho-wrapper" class="portfolio-item">
 
-                <a href="https://www.ruwho.pages.dev" target="_blank" style="text-decoration: none;">
+                <a href="https://ruwho.pages.dev" target="_blank" style="text-decoration: none;">
                     <div id="ruwho-title">
                         <span id="ruwho-ru">RU</span> <span id="ruwho-who">who</span>     
                     </div>
                 </a>
-                <div><a href="https://www.ruwho.pages.dev" target="_blank">RUwho.pages.dev</a></div>
+                <div><a href="https://ruwho.pages.dev" target="_blank">RUwho.pages.dev</a></div>
                 
                 <p>RUwho is a service that allows for easier searching of the public Rutgers University people database. <u>RUwho is unaffiliated with Rutgers</u>.</p>
                 <p>

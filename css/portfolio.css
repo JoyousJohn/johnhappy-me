@@ -20,6 +20,7 @@
 .portfolio-item {
     margin-bottom: 3rem;
     padding: 2rem;
+    padding-right: 8rem;
 }
 
 .stockscope-title {
@@ -126,4 +127,5 @@ a {
 p {
     color: var(--secondary-col);
     font: 1.1rem Montserrat;
+    line-height: 1.5;
 }
