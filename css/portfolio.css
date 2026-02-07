@@ -4,6 +4,11 @@
     column-gap: 2rem;
 }
 
+/* Hide mobile preview container on desktop */
+.portfolio-previews-mobile {
+    display: none;
+}
+
 .portfolio-previews {
     row-gap: 2rem;
     align-items: center;

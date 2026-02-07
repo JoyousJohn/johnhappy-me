@@ -17,6 +17,7 @@ body  {
     margin: 0;
 }
 
+/* Desktop navbar */
 #nav-wrapper {
     position: fixed;
     inset: 0 0 auto 0;
@@ -25,6 +26,18 @@ body  {
     display: flex;
     justify-content: center;
     z-index: 5;
+}
+
+/* Mobile header wrapper contains both navbar and preview container */
+.mobile-header-wrapper {
+    display: none; /* Hidden on desktop */
+}
+
+/* Navbar inside mobile wrapper - not fixed, flows naturally */
+.mobile-header-wrapper .nav-wrapper-mobile {
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
 }
 
 #nav-grid {

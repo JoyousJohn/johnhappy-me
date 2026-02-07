@@ -50,6 +50,52 @@
 
 <body id="body-dark">
 
+    <!-- Mobile header wrapper (navbar + preview container) - shown on mobile only -->
+    <div class="mobile-header-wrapper">
+        <div class="nav-wrapper-mobile">
+            <div id="nav-grid">
+                <div class="nav-btn nav-btn-portfolio" id="nav-btn-active">portfolio</div>
+                <div class="nav-btn nav-btn-contact " id="nav-btn-innactive" onclick="window.location.href='/contact'">contact</div>
+                <div class="nav-btn nav-btn-transcript" id="nav-btn-innactive" onclick="window.location.href='/transcript'">coursework</div>
+            </div>
+        </div>
+
+        <!-- Mobile horizontal scrolling preview container -->
+        <div class="portfolio-previews-mobile">
+            <div class="portfolio-previews-mobile-scroll">
+                <div class="rubus-preview" onclick="scrollToProject('rubus-wrapper')">
+                    <div id="rubus-title" style="font-size: 2.5rem;"><span>RU</span>Bus</div>     
+                </div>
+
+                <div class="stockscope-preview" onclick="scrollToProject('stockscope-wrapper')">
+                    <div class="stockscope-title" style="font-size: 2rem;">StockScope</div>     
+                </div>
+
+                <div class="bricks-deals-preview" onclick="scrollToProject('bricksdeals-wrapper')">
+                    <div id="bricksdeals-title" style="font-size: 2rem;">bricks.deals</div>     
+                </div>
+
+                <div class="deeply-researched-preview" onclick="scrollToProject('deeplyresearched-wrapper')">
+                    <div class="deeplyresearched-title" style="font-size: 1.5rem;">Deeply<br>Researched</div>     
+                </div>
+                    
+                <div class="ruwho-preview" onclick="scrollToProject('ruwho-wrapper')">
+                    <div id="ruwho-title">
+                        <span id="ruwho-ru" style="font-size: 2.5rem;">RU</span> <span id="ruwho-who" style="font-size: 2rem;">who</span>     
+                    </div>
+                </div>
+
+                <div class="ruguessr-preview" onclick="scrollToProject('ruguessr-wrapper')">
+                    <div class="flex items-center">
+                        <img src="img/favicon.png" height="35" style="user-select: none;">
+                        <div id="ruguessr-title" style="font-size: 2rem; margin-left: 0.3rem;">Rutgers<br>Guessr</div>    
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Desktop navbar (shown on desktop, hidden on mobile) -->
     <div id="nav-wrapper">
         <div id="nav-grid">
             <div class="nav-btn nav-btn-portfolio" id="nav-btn-active">portfolio</div>

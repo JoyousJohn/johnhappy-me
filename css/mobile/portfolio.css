@@ -1,9 +1,82 @@
 @media only screen and (max-width: 900px) {
 
+    /* Hide desktop navbar on mobile */
+    #nav-wrapper {
+        display: none !important;
+    }
+
+    /* Show mobile header wrapper */
+    .mobile-header-wrapper {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 5;
+        background-color: var(--background-col);
+    }
+
+    /* Hide the fixed overlay on mobile */
+    .portfolio-grid[style*="position: fixed"] {
+        display: none !important;
+    }
+
+    /* Mobile horizontal scrolling preview container - flows naturally below navbar */
+    .mobile-header-wrapper .portfolio-previews-mobile {
+        display: block;
+        width: 100%;
+        background-color: var(--background-col);
+        overflow-x: auto;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .portfolio-previews-mobile::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+
+    .portfolio-previews-mobile-scroll {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        padding: 0 1rem;
+        align-items: center;
+        min-width: max-content;
+    }
+
+    .portfolio-previews-mobile-scroll > div {
+        flex-shrink: 0;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        padding: 0.5rem;
+    }
+
+    .portfolio-previews-mobile-scroll > div:active {
+        transform: scale(0.95);
+    }
+
+    .portfolio-previews-mobile-scroll > div:hover {
+        transform: scale(1.05);
+    }
+
+    /* Prevent text wrapping in horizontal scroll container */
+    .portfolio-previews-mobile #rubus-title,
+    .portfolio-previews-mobile .stockscope-title,
+    .portfolio-previews-mobile #bricksdeals-title,
+    .portfolio-previews-mobile #ruwho-title {
+        white-space: nowrap;
+    }
+
     .portfolio-grid {
         grid-template-columns: 1fr;
         row-gap: 3rem;
         margin-bottom: 5rem;
+        /* Padding accounts for: navbar (~4rem) + mobile preview container (~3rem with padding) = ~7rem */
+        padding-top: 7rem;
     }
 
     .portfolio-item {
