@@ -99,13 +99,13 @@
 
 /* Preview elements hover effect */
 .rubus-preview, .stockscope-preview, .bricks-deals-preview, 
-.deeply-researched-preview, .ruwho-preview, .ruguessr-preview {
+.deeply-researched-preview, .ruwho-preview, .ruguessr-preview, .browserwhisper-preview {
     cursor: pointer;
     transition: transform 0.2s ease;
 }
 
 .rubus-preview:hover, .stockscope-preview:hover, .bricks-deals-preview:hover,
-.deeply-researched-preview:hover, .ruwho-preview:hover, .ruguessr-preview:hover {
+.deeply-researched-preview:hover, .ruwho-preview:hover, .ruguessr-preview:hover, .browserwhisper-preview:hover {
     transform: scale(1.05);
 }
 

@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/9fec56898e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&family=Montserrat:wght@500&family=Poppins:wght@200&display=swap" rel="stylesheet">    
     <link href="https://fonts.cdnfonts.com/css/mangoli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
     <script src="js/theme.js"></script>
     <script defer src="js/portfolio.js"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -75,8 +76,8 @@
                     <div id="bricksdeals-title" style="font-size: 2rem;">bricks.deals</div>     
                 </div>
 
-                <div class="deeply-researched-preview" onclick="scrollToProject('deeplyresearched-wrapper')">
-                    <div class="deeplyresearched-title" style="font-size: 1.5rem;">Deeply<br>Researched</div>     
+                <div class="browserwhisper-preview" onclick="scrollToProject('browserwhisper-wrapper')">
+                    <div id="browserwhisper-title" style="font-size: 1.2rem; font-family: 'Manrope', sans-serif; color: #000; font-weight: 700;">Browser Whisper</div>
                 </div>
                     
                 <div class="ruwho-preview" onclick="scrollToProject('ruwho-wrapper')">
@@ -90,6 +91,10 @@
                         <img src="img/favicon.png" height="35" style="user-select: none;">
                         <div id="ruguessr-title" style="font-size: 2rem; margin-left: 0.3rem;">Rutgers<br>Guessr</div>    
                     </div>  
+                </div>
+
+                <div class="deeply-researched-preview" onclick="scrollToProject('deeplyresearched-wrapper')">
+                    <div class="deeplyresearched-title" style="font-size: 1.5rem;">Deeply<br>Researched</div>     
                 </div>
             </div>
         </div>
@@ -168,28 +173,29 @@
                 <p>Deals can be sorted and filtered by various criteria. This lightweight web app excludes the clutter present on these stores' individual sites in a concise, neat, and efficient manner.</p>
         
                 <p>The site also offers real-time push notifications as deals go live, featuring an image preview of the set and direct link to the product page in the notification.</p>
-
+           
                 <p>A Flask backend is used with a MongoDB database while a scheduling container periodically updates it. Push notifications are powered by Firebase Cloud Messaging. This weekend project advanced my experience with Flask, MongoDB, and front-end web development. This was my first time using FCM and service workers.</p>
         
                 <a href="https://github.com/JoyousJohn/bricks-deals-public" target="_blank"><p class="bricks-deals-os">The bricks.deals front-end is open-source.</p></a>
-
+        
             </div>
 
-            <div id="deeplyresearched-wrapper" class="portfolio-item">
+            <div id="browserwhisper-wrapper" class="portfolio-item">
         
-                <a href="https://github.com/JoyousJohn/deeply-researched" target="_blank" style="text-decoration: none;">
-                    <div class="deeplyresearched-title">Deeply<br>Researched</div>     
+                <a href="https://browser-whisper.pages.dev" target="_blank" style="text-decoration: none;">
+                    <div class="browserwhisper-title" style="font-size: 2.5rem; font-family: 'Manrope', sans-serif; color: #000; font-weight: 700;">Browser Whisper</div>
                 </a>
-                <div><a href="https://github.com/JoyousJohn/deeply-researched" target="_blank">GitHub Repo</a></div>
         
-                <p>Deeply Researched is an open-source clone of OpenAI's Deep Research capabilities.</p>
-
-                <p>Rather than using an expensive fine-tuned reasoning model, Deeply Researched can mimick Deep Research's performance via careful prompt chaining with standard decoder models. Deeply Researched constantly checks its progress, backtracks, and refines its thought process while performing in-depth research tasks, including continually searching the web to discover required information. Satisfactory outputs have been shown with models as small as inexpensive Nova Lite 1.0 and Llama 70b.</p>
-
-                <p>Deeply Research primarily runs in browser with its logic written in JavaScript. A lightweight python ThreadingHTTPServer is used to make async web searches - no search API required. Most of the core logic was developed over a weekend.</p>
-
+                <div><a href="https://browser-whisper.pages.dev" target="_blank">browser-whisper.pages.dev</a></div>
+        
+                <p>Browser Whisper is a privacy-first, in-browser audio file-to-text web app that runs OpenAI Whisper locally using Transformers.js + Whisper ONNX checkpoints. Rather than sending audio to a cloud transcription service, it keeps recording on-device: audio is decoded in the browser, inference runs inside a Web Worker, and model artifacts are downloaded and cached from Hugging Face. Model size, inference mode (CPU via WebAssembly and GPU via WebGPU when available), and time range can be selected, while the UI streams partial results in real time.</p>
+        
+                <p>This project furthered my experience with modern front-end JavaScript/TypeScript (Web Workers) and browser-based ML runtimes. It's intentionally lightweight from a privacy perspective: there's no server-side transcription pipeline involved: everything important happens in the browser. This was my first time using WASM/WebGPU and running inference in-browser.</p>
+        
+                <a href="https://github.com/JoyousJohn/browser-whisper" target="_blank"><p class="ruguessr-os">Browser Whisper is open-source.</p></a>
+        
             </div>
-
+        
             <div id="ruwho-wrapper" class="portfolio-item">
 
                 <a href="https://ruwho.pages.dev" target="_blank" style="text-decoration: none;">
@@ -231,6 +237,21 @@
                 <a href="https://github.com/JoyousJohn/ruguessr" target="_blank"><p class="ruguessr-os">RutgersGuessr is open-source.</p></a>
         
             </div>
+
+            <div id="deeplyresearched-wrapper" class="portfolio-item">
+        
+                <a href="https://github.com/JoyousJohn/deeply-researched" target="_blank" style="text-decoration: none;">
+                    <div class="deeplyresearched-title">Deeply<br>Researched</div>     
+                </a>
+                <div><a href="https://github.com/JoyousJohn/deeply-researched" target="_blank">GitHub Repo</a></div>
+        
+                <p>Deeply Researched is an open-source clone of OpenAI's Deep Research capabilities.</p>
+        
+                <p>Rather than using an expensive fine-tuned reasoning model, Deeply Researched can mimick Deep Research's performance via careful prompt chaining with standard decoder models. Deeply Researched constantly checks its progress, backtracks, and refines its thought process while performing in-depth research tasks, including continually searching the web to discover required information. Satisfactory outputs have been shown with models as small as inexpensive Nova Lite 1.0 and Llama 70b.</p>
+        
+                <p>Deeply Research primarily runs in browser with its logic written in JavaScript. A lightweight python ThreadingHTTPServer is used to make async web searches - no search API required. Most of the core logic was developed over a weekend.</p>
+        
+            </div>
         </div>
     </div>
 
@@ -249,8 +270,8 @@
                 <div id="bricksdeals-title" style="font-size: 2rem;">bricks.deals</div>     
             </div>
 
-            <div class="deeply-researched-preview" onclick="scrollToProject('deeplyresearched-wrapper')">
-                <div class="deeplyresearched-title" style="font-size: 1.5rem;">Deeply<br>Researched</div>     
+            <div class="browserwhisper-preview" onclick="scrollToProject('browserwhisper-wrapper')">
+                <div id="browserwhisper-title" style="font-size: 1.2rem; font-family: 'Manrope', sans-serif; color: #000; font-weight: 700;">browser-whisper</div>
             </div>
                 
             <div class="ruwho-preview" onclick="scrollToProject('ruwho-wrapper')">
@@ -264,6 +285,10 @@
                     <img src="img/favicon.png" height="35" style="user-select: none;">
                     <div id="ruguessr-title" style="font-size: 2rem; margin-left: 0.3rem;">Rutgers<br>Guessr</div>    
                 </div>  
+            </div>
+
+            <div class="deeply-researched-preview" onclick="scrollToProject('deeplyresearched-wrapper')">
+                <div class="deeplyresearched-title" style="font-size: 1.5rem;">Deeply<br>Researched</div>     
             </div>
 
         </div>
