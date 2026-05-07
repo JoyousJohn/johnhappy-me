@@ -97,6 +97,12 @@
     color: var(--a-color) !important;
 }
 
+/* Browser Whisper headings should be white in dark mode */
+html[theme="dark"] .browserwhisper-title,
+html[theme="dark"] #browserwhisper-title {
+    color: #fff !important;
+}
+
 /* Preview elements hover effect */
 .rubus-preview, .stockscope-preview, .bricks-deals-preview, 
 .deeply-researched-preview, .ruwho-preview, .ruguessr-preview, .browserwhisper-preview {
