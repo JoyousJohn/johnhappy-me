@@ -76,6 +76,10 @@
                     <div id="bricksdeals-title" style="font-size: 2rem;">bricks.deals</div>     
                 </div>
 
+                <div class="mcservers-preview" onclick="scrollToProject('mcservers-wrapper')">
+                    <div class="mcservers-title" style="font-size: 1.5rem;">MCServers.me</div>     
+                </div>
+
                 <div class="browserwhisper-preview" onclick="scrollToProject('browserwhisper-wrapper')">
                     <div id="browserwhisper-title" style="font-size: 1.2rem; font-family: 'Manrope', sans-serif; color: #000; font-weight: 700;">browser-whisper</div>
                 </div>
@@ -176,6 +180,25 @@
         
             </div>
 
+            <div id="mcservers-wrapper" class="portfolio-item">
+        
+                <a href="https://mcservers.me" target="_blank" style="text-decoration: none;">
+                    <div class="mcservers-title">MCServers.me</div>     
+                </a>
+                <div><a href="https://mcservers.me" target="_blank">MCServers.me</a></div>
+        
+                <p>MCServers.me is a Minecraft server listing platform with public server discovery, ownership verification, voting, and moderation.</p>
+        
+                <p>Players can browse, search, and filter server listings, verify ownership of their servers, and vote on a cooldown; votes are persisted in a durable queue with exponential backoff and dead-lettering before being forwarded to Minecraft servers via Votifier.</p>
+        
+                <p>Live server status is maintained by a polling engine that pings every listed server for online status, player counts, and version, applying a strike-based fault-tolerance model so transient outages are distinguished from genuinely offline servers. Historical telemetry is recorded continuously: each per-server status flip is appended to an immutable event log from which uptime percentages are derived, and periodic platform-wide snapshots of online/offline server counts and aggregate player populations are stored, powering a public charts page of custom SVG time-series visualizations with interactive zoom and pan.</p>
+        
+                <p>Servers are ranked hourly by a hot-score engine combining a breakdown of roughly 40 weighted signals such as vote velocity, uptime, player counts, and recency rather than naive sorting. The platform also features favorites, flagging, moderation queues, bans, and approvals, with new servers continually being discovered and added to the platform.</p>
+        
+                <p>The frontend is a statically-exported Next.js app styled with Tailwind and served via Cloudflare Pages while an Express + TypeScript API and a Votifier forwarding service run on Railway with MongoDB Atlas, with Prometheus metrics exposed by the backend. The monorepo is containerized with multi-stage Docker builds and a compose stack with healthchecks, and a GitHub Actions CI matrix runs an extensive Vitest suite with supertest integration tests against an in-memory MongoDB across all three services. This project significantly expanded my experience with TypeScript, Next.js, React Query, and multi-service deployments, and was my first time using Votifier, SSE, and Prometheus in production. It was also my first time operating parallel development, staging, and production environments for a single live product.</p>
+        
+            </div>
+
             <div id="browserwhisper-wrapper" class="portfolio-item">
         
                 <a href="https://browser-whisper.pages.dev" target="_blank" style="text-decoration: none;">
@@ -249,6 +272,10 @@
 
             <div class="bricks-deals-preview" onclick="scrollToProject('bricksdeals-wrapper')">
                 <div id="bricksdeals-title" style="font-size: 2rem;">bricks.deals</div>     
+            </div>
+
+            <div class="mcservers-preview" onclick="scrollToProject('mcservers-wrapper')">
+                <div class="mcservers-title" style="font-size: 1.5rem;">MCServers.me</div>     
             </div>
 
             <div class="browserwhisper-preview" onclick="scrollToProject('browserwhisper-wrapper')">
