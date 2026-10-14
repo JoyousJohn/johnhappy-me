@@ -43,16 +43,6 @@
     margin-top: -1rem;
 }
 
-.deeplyresearched-title {
-    font: 2.7rem Inter Tight;
-    font-style: normal;
-    color: var(--primary-col);
-    display: flex;
-    align-items: center;
-    user-select: none;
-    line-height: 0.9;
-}
-
 #bricksdeals-title {
     font: 4rem mangoli;
     font-style: normal;
@@ -104,14 +94,14 @@ html[theme="dark"] #browserwhisper-title {
 }
 
 /* Preview elements hover effect */
-.rubus-preview, .stockscope-preview, .bricks-deals-preview, 
-.deeply-researched-preview, .ruwho-preview, .ruguessr-preview, .browserwhisper-preview {
+.rubus-preview, .stockscope-preview, .bricks-deals-preview,
+.ruwho-preview, .ruguessr-preview, .browserwhisper-preview {
     cursor: pointer;
     transition: transform 0.2s ease;
 }
 
 .rubus-preview:hover, .stockscope-preview:hover, .bricks-deals-preview:hover,
-.deeply-researched-preview:hover, .ruwho-preview:hover, .ruguessr-preview:hover, .browserwhisper-preview:hover {
+.ruwho-preview:hover, .ruguessr-preview:hover, .browserwhisper-preview:hover {
     transform: scale(1.05);
 }
 
