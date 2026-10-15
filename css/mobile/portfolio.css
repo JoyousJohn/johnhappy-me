@@ -93,7 +93,7 @@
     /* Prevent text wrapping in horizontal scroll container */
     .portfolio-previews-mobile #rubus-title,
     .portfolio-previews-mobile .stockscope-title,
-    .portfolio-previews-mobile #bricksdeals-title,
+    .portfolio-previews-mobile #brickprices-title,
     .portfolio-previews-mobile #ruwho-title {
         white-space: nowrap;
     }
@@ -121,7 +121,7 @@
         box-sizing: border-box;
     }
 
-    #stockscope-title, #bricksdeals-title {
+    #stockscope-title, #brickprices-title {
         font-size: 3rem;
     }
 

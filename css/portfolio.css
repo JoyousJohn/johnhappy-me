@@ -43,7 +43,7 @@
     margin-top: -1rem;
 }
 
-#bricksdeals-title {
+#brickprices-title {
     font: 4rem mangoli;
     font-style: normal;
     color: var(--primary-col);
@@ -137,7 +137,7 @@
     }
 }
 
-.ruguessr-os, .rubus-os, .bricks-deals-os {
+.ruguessr-os, .rubus-os {
     color: var(--a-color) !important;
 }
 
@@ -148,14 +148,14 @@ html[theme="dark"] #browserwhisper-title {
 }
 
 /* Preview elements hover effect */
-.rubus-preview, .stockscope-preview, .bricks-deals-preview,
+.rubus-preview, .stockscope-preview, .brickprices-preview,
 .ruwho-preview, .ruguessr-preview, .browserwhisper-preview, .mcservers-preview, .astatine-preview {
     cursor: pointer;
     transition: transform 0.2s ease;
     pointer-events: auto;
 }
 
-.rubus-preview:hover, .stockscope-preview:hover, .bricks-deals-preview:hover,
+.rubus-preview:hover, .stockscope-preview:hover, .brickprices-preview:hover,
 .ruwho-preview:hover, .ruguessr-preview:hover, .browserwhisper-preview:hover, .mcservers-preview:hover, .astatine-preview:hover {
     transform: scale(1.05);
 }
