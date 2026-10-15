@@ -6,7 +6,7 @@
     <title>Happy J</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/9fec56898e.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&family=Montserrat:wght@500&family=Poppins:wght@200&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200;700&family=Montserrat:wght@500&family=Poppins:wght@200&display=swap" rel="stylesheet">    
     <link href="https://fonts.cdnfonts.com/css/mangoli" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap" rel="stylesheet">
     <script src="js/theme.js"></script>
@@ -94,6 +94,13 @@
                     <div class="flex items-center">
                         <img src="img/favicon.png" height="35" style="user-select: none;">
                         <div id="ruguessr-title" style="font-size: 2rem; margin-left: 0.3rem;">Rutgers<br>Guessr</div>    
+                    </div>  
+                </div>
+
+                <div class="astatine-preview" onclick="scrollToProject('astatine-wrapper')">
+                    <div class="flex items-center">
+                        <img src="img/astatine-favicon.png" height="35" style="user-select: none;">
+                        <div class="astatine-title" style="font-size: 1.4rem; margin-left: 0.3rem;">Astatine85</div>    
                     </div>  
                 </div>
             </div>
@@ -256,6 +263,24 @@
                 <a href="https://github.com/JoyousJohn/ruguessr" target="_blank"><p class="ruguessr-os">RutgersGuessr is open-source.</p></a>
         
             </div>
+
+            <div id="astatine-wrapper" class="portfolio-item">
+        
+                <a href="https://astn85mc.pages.dev" target="_blank" style="text-decoration: none;">
+                    <div class="flex items-center">
+                        <img src="img/astatine-favicon.png" height="50">
+                        <div class="astatine-title">Astatine85</div>    
+                    </div>    
+                </a>
+                <div><a href="https://astn85mc.pages.dev" target="_blank">astn85mc.pages.dev</a></div>
+        
+                <p>Astatine85 Leaderboard is a leaderboard tracker for the Astn85MC Minecraft server.</p>
+        
+                <p>The site tracks players across 14 stat categories with daily and weekly views, sorting by rank or rank change, and surfaces a top-three podium spotlight. A live search with a keyboard shortcut and autocomplete suggestions resolves players instantly, and each player has a profile page with per-stat SVG sparklines generated from historical data and Minecraft skin avatars proxied through multiple CDNs with automatic fallback. The UI is bilingual in English and Japanese with automatic language detection via timezone and locale.</p>
+        
+                <p>The entire site is a single self-contained page served from Cloudflare Pages in a dark, gold-accented pixel-font aesthetic. A scheduled GitHub Actions workflow snapshots the top 100 players across all categories daily, fetching per-player stats in rate-limited batches and using TLS-fingerprint browser impersonation to avoid bot detection, then commits a JSON snapshot and a per-player CSV time series with 1-day and 1-week deltas back to the repository, which the frontend parses to power the sparkline charts. A Cloudflare Worker proxies the live game API with origin gating and edge caching, serves player skins through a multi-CDN fallback chain, and tracks profile views on Workers KV using SHA-1-hashed client IPs with hourly per-visitor deduplication. A service worker applies hybrid caching with cache-first static assets and network-first JSON data, and the site is installable as a PWA. This was my first time using Cloudflare Workers and KV in production, my first scheduled data pipeline via GitHub Actions, and my first bilingual UI.</p>
+        
+            </div>
         </div>
     </div>
 
@@ -292,6 +317,13 @@
                 <div class="flex items-center">
                     <img src="img/favicon.png" height="35" style="user-select: none;">
                     <div id="ruguessr-title" style="font-size: 2rem; margin-left: 0.3rem;">Rutgers<br>Guessr</div>    
+                </div>  
+            </div>
+
+            <div class="astatine-preview" onclick="scrollToProject('astatine-wrapper')">
+                <div class="flex items-center">
+                    <img src="img/astatine-favicon.png" height="35" style="user-select: none;">
+                    <div class="astatine-title" style="font-size: 1.4rem; margin-left: 0.3rem;">Astatine85</div>    
                 </div>  
             </div>
 

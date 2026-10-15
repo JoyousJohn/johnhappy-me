@@ -111,6 +111,32 @@
     margin-left: 1rem;
 }
 
+.astatine-title {
+    font: 700 2.7rem 'Chivo Mono', monospace;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    line-height: 0.9;
+    margin-left: 1rem;
+    background: linear-gradient(110deg, #ffffff, #fff0b8 48%, #91c8ff, #ffffff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: astatine-gradient-shift 12s linear infinite;
+}
+
+@keyframes astatine-gradient-shift {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 200% center;
+    }
+}
+
 .ruguessr-os, .rubus-os, .bricks-deals-os {
     color: var(--a-color) !important;
 }
@@ -123,13 +149,14 @@ html[theme="dark"] #browserwhisper-title {
 
 /* Preview elements hover effect */
 .rubus-preview, .stockscope-preview, .bricks-deals-preview,
-.ruwho-preview, .ruguessr-preview, .browserwhisper-preview, .mcservers-preview {
+.ruwho-preview, .ruguessr-preview, .browserwhisper-preview, .mcservers-preview, .astatine-preview {
     cursor: pointer;
     transition: transform 0.2s ease;
+    pointer-events: auto;
 }
 
 .rubus-preview:hover, .stockscope-preview:hover, .bricks-deals-preview:hover,
-.ruwho-preview:hover, .ruguessr-preview:hover, .browserwhisper-preview:hover, .mcservers-preview:hover {
+.ruwho-preview:hover, .ruguessr-preview:hover, .browserwhisper-preview:hover, .mcservers-preview:hover, .astatine-preview:hover {
     transform: scale(1.05);
 }
 
