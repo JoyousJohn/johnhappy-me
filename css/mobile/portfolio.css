@@ -94,7 +94,8 @@
     .portfolio-previews-mobile #rubus-title,
     .portfolio-previews-mobile .stockscope-title,
     .portfolio-previews-mobile #brickprices-title,
-    .portfolio-previews-mobile #ruwho-title {
+    .portfolio-previews-mobile #ruwho-title,
+    .portfolio-previews-mobile .yelvix-title {
         white-space: nowrap;
     }
 

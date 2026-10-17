@@ -137,6 +137,20 @@
     }
 }
 
+.yelvix-title {
+    font: italic 600 3rem Georgia, "Times New Roman", serif;
+    color: #f0ede2;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    line-height: 0.9;
+    letter-spacing: -0.045em;
+}
+
+[theme="light"] .yelvix-title {
+    color: #182322;
+}
+
 .ruguessr-os, .rubus-os {
     color: var(--a-color) !important;
 }
@@ -149,14 +163,14 @@ html[theme="dark"] #browserwhisper-title {
 
 /* Preview elements hover effect */
 .rubus-preview, .stockscope-preview, .brickprices-preview,
-.ruwho-preview, .ruguessr-preview, .browserwhisper-preview, .mcservers-preview, .astatine-preview {
+.ruwho-preview, .ruguessr-preview, .browserwhisper-preview, .mcservers-preview, .astatine-preview, .yelvix-preview {
     cursor: pointer;
     transition: transform 0.2s ease;
     pointer-events: auto;
 }
 
 .rubus-preview:hover, .stockscope-preview:hover, .brickprices-preview:hover,
-.ruwho-preview:hover, .ruguessr-preview:hover, .browserwhisper-preview:hover, .mcservers-preview:hover, .astatine-preview:hover {
+.ruwho-preview:hover, .ruguessr-preview:hover, .browserwhisper-preview:hover, .mcservers-preview:hover, .astatine-preview:hover, .yelvix-preview:hover {
     transform: scale(1.05);
 }
 

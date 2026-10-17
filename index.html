@@ -103,6 +103,10 @@
                         <div class="astatine-title" style="font-size: 1.4rem; margin-left: 0.3rem;">Astatine85</div>    
                     </div>  
                 </div>
+
+                <div class="yelvix-preview" onclick="scrollToProject('yelvix-wrapper')">
+                    <div class="yelvix-title" style="font-size: 2rem;">Yelvix</div>
+                </div>
             </div>
         </div>
     </div>
@@ -279,6 +283,25 @@
                 <p>The entire site is a single self-contained page served from Cloudflare Pages in a dark, gold-accented pixel-font aesthetic. A scheduled GitHub Actions workflow snapshots the top 100 players across all categories daily, fetching per-player stats in rate-limited batches and using TLS-fingerprint browser impersonation to avoid bot detection, then commits a JSON snapshot and a per-player CSV time series with 1-day and 1-week deltas back to the repository, which the frontend parses to power the sparkline charts. A Cloudflare Worker proxies the live game API with origin gating and edge caching, serves player skins through a multi-CDN fallback chain, and tracks profile views on Workers KV using SHA-1-hashed client IPs with hourly per-visitor deduplication. A service worker applies hybrid caching with cache-first static assets and network-first JSON data, and the site is installable as a PWA. This was my first time using Cloudflare Workers and KV in production, my first scheduled data pipeline via GitHub Actions, and my first bilingual UI.</p>
         
             </div>
+
+            <div id="yelvix-wrapper" class="portfolio-item">
+
+                <a href="https://yelvix.pages.dev" target="_blank" style="text-decoration: none;">
+                    <div class="yelvix-title">Yelvix</div>     
+                </a>
+                <div><a href="https://yelvix.pages.dev" target="_blank">yelvix.pages.dev</a></div>
+        
+                <p>Yelvix is a dashboard comparing the dividend yields of perpetual preferred securities issued by digital-asset treasury companies (Strategy, Strive, Bitmine, DeFi Development Corp and The Smarter Web Company).</p>
+        
+                <p>It tracks each instrument's price, stated rate, annual dividend per share and effective yield alongside its declared payment schedule. Semi-monthly variable rates, fixed quarterly rates, weekly and daily distributions, and cumulative arrears step-ups are all modelled explicitly. Vendor-reported yields are never trusted: every figure is recomputed from raw market prices and verified issuer/SEC dividend terms.</p>
+        
+                <p>The frontend is a React + TypeScript single-page app built with Vite, using TanStack Query for data loading, with Apache ECharts for the charts. It ships to Cloudflare Pages, and runs with no runtime backend, database, subscription or paid market-data account; open clients poll the published snapshot. Features include a sortable securities table with a yield-change (pp) column, historical charts, a dividend calendar and timeline, and per-security detail pages.</p>
+        
+                <p>Data is collected by standalone Python adapters that read public issuer APIs and SEC filings, validate with Pydantic, then write atomic, deterministic JSON datasets guarded by a process lock. GitHub Actions run collection on exchange-aware schedules (US quotes every 15 minutes, European quotes hourly, daily close finalization, and hourly dividend checks), handling DST, holidays and early closes through XNYS, XLON and XLUX calendars. Missing data stays null rather than being fabricated, and provider closes must be corroborated by an independent verified source. Wrangler and reusable build artifacts publish data updates to Cloudflare Pages. Tests span pytest, Vitest and Playwright.</p>
+        
+                <p>This project furthered my experience with TypeScript, React and TanStack tooling, ECharts, financial modelling, and multi-schedule GitHub Actions pipelines.</p>
+        
+            </div>
         </div>
     </div>
 
@@ -323,6 +346,10 @@
                     <img src="img/astatine-favicon.png" height="35" style="user-select: none;">
                     <div class="astatine-title" style="font-size: 1.4rem; margin-left: 0.3rem;">Astatine85</div>    
                 </div>  
+            </div>
+
+            <div class="yelvix-preview" onclick="scrollToProject('yelvix-wrapper')">
+                <div class="yelvix-title" style="font-size: 2rem;">Yelvix</div>
             </div>
 
         </div>
